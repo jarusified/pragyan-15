@@ -15,7 +15,7 @@
 
 	loader.addProgressListener(function(e) { 
     	var completed=(e.completedCount/e.totalCount)*100;
-    	$progress.text(completed); 
+    	$progress.text(Math.floor(completed)); 
     	change(e.completedCount/e.totalCount);
 	}); 
 
@@ -37,7 +37,6 @@
 		}
 	}
 	function rotate(elem,angle){
-		console.log(angle);
 		elem.css('-webkit-transform','rotateZ('+angle+'deg)');
 		elem.css('-moz-transform-origin','rotateZ('+angle+'deg)');
 		elem.css('-ms-transform-origin','rotateZ('+angle+'deg)');
