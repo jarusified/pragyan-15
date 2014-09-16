@@ -20,26 +20,20 @@
 	}); 
 
 	states={
-		1:[$("#logo-one img"),-30],
-		2:[$("#logo-two img"), 30],
-		3:[$("#logo-three img"), -80],
-		4:[$("#logo-four img"), 80],
-		5:[$("#logo-five img"), -130]
+		1:$("#logo-one img"),
+		2:$("#logo-two img"),
+		3:$("#logo-three img"),
+		4:$("#logo-four img"),
+		5:$("#logo-five img")
 	}
  
 	function init(){
 		loader.start();
-		$("#logo-one img").css('transform','rotateZ(180deg)');
-		$("#logo-two img").css('transform','rotateZ(-180deg)');
-		$("#logo-three img").css('transform','rotateZ(145deg)');
-		$("#logo-four img").css('transform','rotateZ(-145deg)');
-		$("#logo-five img").css('transform','rotateZ(90deg)');
 	}
 	function change(count){
 		value=Math.floor(count*5);
 		if(value!=0){
-			console.log(states, value, states[value]);
-			rotate(states[value][0],0);
+			rotate(states[6-value],0);
 		}
 	}
 	function rotate(elem,angle){
