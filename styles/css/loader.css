@@ -16,6 +16,8 @@ html,body{
     background-position: 0 0pt, 4px 4px;
     background-size: 8px 8px;
     background-color: #333333;
+    /*background: none;
+    background: black;*/
 }
 /*
 #logo{
@@ -32,35 +34,58 @@ html,body{
   	display: block;
 }*/
 
+
 #logo{
 	position: fixed;
 	z-index: 2;
-	top: 100px;
+	top: 20%;
 	left: 50%;
 }
 .logo-img{
 	position:absolute;
+    -webkit-transition:all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -o-transition:all 1s ease-in-out;
+    -ms-transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out;
 }
 .logo-img img{
-	width: 400px;
+	width: 300px;
 	height: auto;
-	margin-left: -200px;
+	margin-left: -150px;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
 }
 
-@media(max-height: 600px){
-	#loader img{
-		display: none;
+@media(max-height: 700px){
+	#loader{
+		bottom: 2% !important;
 	}	
 }
 
 #loader{
-	position: fixed;
+	position:fixed;
 	z-index: 2;
-	bottom: 20px;
+	width: 80px;
+	height: 80px;
+	margin-left: -40px;
+	bottom: 20%;
 	left: 50%;
+
 }
 #loader img{
-	width: 100px;
+	z-index:3;
+	width: 80px;
 	height: auto;
-	margin-left: -50px;
+	margin-left: 0px;
+}
+#percent{
+	z-index: 4;
+	position: absolute;
+	width:100%;
+	text-align: center;
+	top:40%;
 }
