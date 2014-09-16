@@ -19,32 +19,35 @@
     	change(e.completedCount/e.totalCount);
 	}); 
 
-	var states={
-		1:$("#logo-one"),
-		2:$("#logo-two"),
-		3:$("#logo-three"),
-		4:$("#logo-four"),
-		5:$("#logo-five")
+	states={
+		1:[$("#logo-one img"),-30],
+		2:[$("#logo-two img"), 30],
+		3:[$("#logo-three img"), -80],
+		4:[$("#logo-four img"), 80],
+		5:[$("#logo-five img"), -130]
 	}
  
 	function init(){
 		loader.start();
-		$("#logo-one").css('transform','rotateZ(30deg)');
-		$("#logo-two").css('transform','rotateZ(-30deg)');
-		$("#logo-three").css('transform','rotateZ(80deg)');
-		$("#logo-four").css('transform','rotateZ(-80deg)');
-		$("#logo-five").css('transform','rotateZ(130deg)');
+		$("#logo-one img").css('transform','rotateZ(180deg)');
+		$("#logo-two img").css('transform','rotateZ(-180deg)');
+		$("#logo-three img").css('transform','rotateZ(145deg)');
+		$("#logo-four img").css('transform','rotateZ(-145deg)');
+		$("#logo-five img").css('transform','rotateZ(90deg)');
 	}
 	function change(count){
 		value=Math.floor(count*5);
-		console.log(states[value]);
-		rotate(states[value],0);
+		if(value!=0){
+			console.log(states, value, states[value]);
+			rotate(states[value][0],0);
+		}
 	}
 	function rotate(elem,angle){
+		console.log(angle);
 		elem.css('-webkit-transform','rotateZ('+angle+'deg)');
-		elem.css('-moz-transform','rotateZ('+angle+'deg)');
-		elem.css('-ms-transform','rotateZ('+angle+'deg)');
-		elem.css('-o-transform','rotateZ('+angle+'deg)');
+		elem.css('-moz-transform-origin','rotateZ('+angle+'deg)');
+		elem.css('-ms-transform-origin','rotateZ('+angle+'deg)');
+		elem.css('-o-transform-origin','rotateZ('+angle+'deg)');
 		elem.css('transform','rotateZ('+angle+'deg)');					
 	}
 	init();
