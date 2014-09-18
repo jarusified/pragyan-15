@@ -37,8 +37,9 @@
 
 		//fadeout when loading completes
 		if(value==5){
-			$('#loading-container').delay(2000).fadeOut();
-			$('#main').delay(2500).fadeIn();
+			$('#loading-container').delay(0).fadeOut(function(){
+				$('#main').fadeIn();
+			});	
 		}
 	}
 	function rotate(elem,angle){
@@ -52,99 +53,132 @@
 	// home page stuff
 
  	function planetFormation(planets,orbit,positions){
-		for(var i=0;i<planets.length;i++){
-			theta=(i*2*Math.PI/planets.length)+40;
-			x=orbit.h + orbit.a*Math.cos(theta);
-			y=orbit.k + orbit.b*Math.sin(theta);
+ 		/*if(planets.length%2!=0){
+ 			var mid=Math.floor(planets.length/2);
+ 			for(var i=1;i<=mid;i++){
+ 				theta=-(((i*360)/planets.length)+90)*Math.PI/180;
+				x=orbit.h+orbit.a*Math.cos(theta);
+				y=orbit.k+orbit.b*Math.sin(theta);
+				positions.push({'angle':theta,'name':planets[i].id,'x':x,'y':y});
+			}
+			x=orbit.h+orbit.a*Math.cos(0.5*Math.PI);
+			y=orbit.k+orbit.b*Math.sin(0.5*Math.PI);
+ 			positions.push({'angle':0.5*Math.PI,'name':planets[mid].id,'x':x,'y':y});
+			for(var i=mid;i>0;--i){
+				theta=(((i*360)/planets.length)+90)*Math.PI/180;
+				x=orbit.h+orbit.a*Math.cos(theta);
+				y=orbit.k+orbit.b*Math.sin(theta);
+				positions.push({'angle':theta,'name':planets[planets.length-i].id,'x':x,'y':y});
+			}
+ 		}
+ 		console.log(positions);
+ 		console.log(planets);
+ 		
+		for(var i=0;i<positions.length;i++){
+			console.log(positions[i].name);
+			$('#'+positions[i].name).css({'left':positions[i].x+'%','top':positions[i].y+'%'});
+		}*/
 
-			//x=orbit.h+orbit.a*Math.cos(theta);
-			//y=orbit.k+orbit.a*Math.sin(theta);
+		for(var i=0;i<planets.length;i++){
+			theta=(((i*360)/planets.length)+90)*Math.PI/180;
+			x=orbit.h+orbit.a*Math.cos(theta);
+			y=orbit.k+orbit.b*Math.sin(theta);
+			positions.push({'angle':theta,'x':x,'y':y});
 			$('#'+planets[i].id).css({'left':x+'%','top':y+'%'});
-			positions.push({'x':x,'y':y});
 		}
 	}
 	function elements(counter,arr) {
   		var currentItem = arr[counter];
   		var priorItem = arr[counter - 1] ? arr[counter - 1] : arr[arr.length - 1];
   		var nextItem = arr[counter + 1] ? arr[counter + 1] : arr[0];
-  		//console.log(priorItem,currentItem,nextItem);
-  		return currentItem;
+  		return currentItem.name;
 
 	}
 
-	function shiftArrayRight(arr,count){
-		arr.unshift(arr.pop());
-		return arr;
-	}
-		
-	function shiftArrayLeft(arr){
-		arr.push(arr.shift(arr[0]));
-		return arr;
-	}
 
-	function move(current,planets,arr){
-		for(var i=0;i<planets.length;i++){
-			$('#'+planets[i].id).css('transform','scale(1.0,1.0)');
-		}
 
-		$('#'+current).css('transform','scale(2.0,2.0)');
-		for(var i=0;i<arr.length;i++){	
-			$('#'+planets[i].id).animate({'top':arr[i].y+'%','left':arr[i].x+'%'});
+	function move(planets,positions,map){
+
+		for(var i=0;i<positions.length;i++){	
+			$('#'+planets[i].id).removeClass('planet-current planet-neighbour planet-others').addClass(map[i]);
+			console.log(planets[i],map[i]);
+			$('#'+planets[i].id).animate({'top':positions[i].y+'%','left':positions[i].x+'%'}, 1000);
+
 		}
 	}
+
+
 
 	function init(){
 		//variables
-		var orbit={
-			h:35,
-			k:25,
-			a:40,
-			b:25
-		},
-		planets=$('.planets'),
-		planets_id=[],
+		var aspectRatio = window.innerWidth/window.innerHeight;
+		var orbit;
+		if(aspectRatio<5/4)
+			orbit={
+				h:50,
+				k:25,
+				a:40,
+				b:15
+			};
+		else
+			orbit={
+				h:50,
+				k:50,
+				a:40,
+				b:15
+			};
+
+		var planets=$('.planets').toArray(),
 		x,
 		y,
 		theta,
 		positions={
+			'name':'',
 			x:0,
 			y:0
 		},
 		direction = true, //forward
 		press=false,
-		default_planet=$('#pragyan');
 		positions=[];
+		var map=['planet-current','planet-neighbour','planet-others','planet-others', 'planet-neighbour'];
 
 		document.addEventListener('keydown',onkeydown,false);
 		document.addEventListener('keyup',onkeyup,false);
 
 
-		loader.start();  // starts preloader 
-		planetFormation(planets,orbit,positions);
+		loader.start();  // starts preloader
+		planetFormation(planets,orbit,positions);	
 
-		for(var i=0;i<planets.length;i++){
-			planets_id.push(planets[i].id);
+		function shiftArrayRight(arr){
+			arr.unshift(arr.pop());
+			return arr;
 		}
-		function onkeydown(event){
-			press=true;
-			if(event.keyCode==37){
-				positions=shiftArrayLeft(positions);
-				planets_id=shiftArrayLeft(planets_id);
-				defaule_planet=elements(0,planets_id);
-				move(default_planet,planets,positions);
-			}
-			else if(event.keyCode==39){
-				arr=shiftArrayRight(positions);
-				planets_id=shiftArrayRight(planets_id);
-				default_planet=elements(0,planets_id);
-				console.log(default_planet);
-				move(default_planet,planets,positions);
-			}	
 		
+		function shiftArrayLeft(arr){
+			arr.push(arr.shift(arr[0]));
+			return arr;
 		}
-		function onkeyup(event){
-			press=false;
-		}
+		
+		$('.planets').bind('transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function(){
+			press = false;
+				console.log('aaaa');
+		});
+		
+		function onkeydown(event){
+
+			if(!press){
+				if(event.keyCode==37){
+					arr=shiftArrayLeft(planets);
+					move(arr,positions,map);
+				}
+				else if(event.keyCode==39){
+					arr=shiftArrayRight(planets);
+					move(arr,positions,map);
+				}	
+				press=true;
+			}
+
+		}	
 	}
 	init();
 }(window.jQuery);
