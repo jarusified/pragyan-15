@@ -5,7 +5,6 @@ html,body{
 	height: 100%;
 	overflow: hidden;}
 
-
 #texture{
 	z-index: 1;
 	width: 100%;
@@ -16,24 +15,7 @@ html,body{
     background-position: 0 0pt, 4px 4px;
     background-size: 8px 8px;
     background-color: #333333;
-    /*background: none;
-    background: black;*/
 }
-/*
-#logo{
-	position:absolute;
-	width: 400px;
-	height: auto;
-	top: 20%;
-	left: 50%;
-	margin-left: -200px;
-}*/
-/*#logo img{
-	position: absolute;
-  	margin: auto;
-  	display: block;
-}*/
-
 
 #logo{
 	position: fixed;
@@ -53,11 +35,11 @@ html,body{
     -o-transform-origin: 50% 50%;
     -ms-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    -webkit-transition:all 1s ease-in-out;
-    -moz-transition:all 1s ease-in-out;
-    -o-transition:all 1s ease-in-out;
-    -ms-transition:all 1s ease-in-out;
-    transition:all 1s ease-in-out;
+    -webkit-transition:all 2s ease-out;
+    -moz-transition:all 2s ease-out;
+    -o-transition:all 2s ease-out;
+    -ms-transition:all 2s ease-out;
+    transition:all 2s ease-out;
 }
 
 #logo-one img{
