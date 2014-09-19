@@ -1,8 +1,8 @@
 #main{
-	width: 100%;
-	position: absolute;
-	height: 100%;
-	background-color: black;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: black;
   display: none;
   
 }
@@ -11,8 +11,8 @@
   height: 100%;
 }
 #bg-img{
-	z-index: 1;
-	position: absolute;
+  z-index: 1;
+  position: absolute;
 }
 #bg-img img{
   width: 200%;
@@ -20,19 +20,19 @@
   position: fixed;
   left: -50%;
   top: -5%;
-  -webkit-transition:-webkit-transform 1s ease-out;
+  -webkit-transition:-webkit-transform 1s ease-out, bounce;
   -moz-transition:-moz-transform 1s ease-out;
   -o-transition:-o-transform 1s ease-out;
   -ms-transition:-ms-transform 1s ease-out;
-  transition:transform 1s ease-out;
+  transition:transform 1s ease-out , bounce;
 }
 .bg-zoom{
   -webkit-transform:scale(0.9, 0.9);  
 }
 .planets{
-	width:40%;
-	height: 40%;
-	position: absolute;
+  width:40%;
+  height: 40%;
+  position: absolute;
   margin: -20% 0 0 -20%;
   cursor: pointer;
   -webkit-transition:-webkit-transform 1s ease-out;
@@ -66,9 +66,9 @@
   z-index: 1;
 }
 .planets img{
-	width: 100%;
-	height: auto;
-	position: absolute;
+  width: 100%;
+  height: auto;
+  position: absolute;
 }
 
 /*.planet-current{
@@ -131,10 +131,17 @@
   }
 }
 */
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
 
 .bounce{
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
+
+  -webkit-animation-name:bounce;
+          animation-name:bounce;
   -webkit-transform-origin: center bottom;
       -ms-transform-origin: center bottom;
           transform-origin: center bottom;

@@ -37,7 +37,7 @@
 
 		//fadeout when loading completes
 		if(value==5){
-			$('#loading-container').delay(3000).fadeOut(function(){
+			$('#loading-container').delay(0).fadeOut(function(){
 				$('#main').fadeIn();
 			});	
 		}
@@ -60,37 +60,17 @@
 			y=orbit.k+orbit.b*Math.sin(theta);
 			positions.push({'angle':theta,'x':x,'y':y});
 			$('#'+planets[i].id).css({'left':x+'%','top':y+'%'});
+			//$('#'+planets[i].id).toggle('bounce',{ times: 3},"slow");
 		}
-	}
-
-	function shiftArrayRight(arr, count){
-		for(i=0; i<count; i++)
-			arr.unshift(arr.pop());
-		return arr;
-	}
-		
-	function shiftArrayLeft(arr, count){
-		for(i=0; i<count; i++)
-			arr.push(arr.shift(arr[0]));
-		return arr;
 	}
 	
-	function modify(planets,positions,map,distance){
-		while(distance>0){
-			console.log(distance-planets.length);
-			if(distance-planets.length>0)
-				planets=shiftArrayRight(planets,1);
-			else
-				planets=shiftArrayLeft(planets,1);
-			move(planets,positions,map,distance);
-			distance--;
-		}
-	}
-	function move(planets,positions,map,distance){
-		for(var i=0;i<positions.length;i++){
-			$('#'+planets[i].id).animate({'top':positions[i].y+'%','left':positions[i].x+'%'}, 1000);
+	function move(planets,positions,map){
+
+		for(var i=0;i<positions.length;i++){	
 			$('#'+planets[i].id).removeClass('planet-current planet-neighbour planet-others').addClass(map[i]);
 			//$('#bg-img img').removeClass('bg-zoom').addClass('bg-zoom');
+			$('#'+planets[i].id).animate({'top':positions[i].y+'%','left':positions[i].x+'%'}, 1000);
+
 		}
 	}
 
@@ -132,26 +112,32 @@
 				}
 				to = planet_id.indexOf(this.id);
 				from = planet_id.indexOf($('.planet-current').attr('id'));
+				console.log(positions[from].x, positions[to].x);
 				
-				var distance = Math.abs(from-to);
-				if(distance==1){
-					if(positions[from].x-positions[to].x>0){
+				if(from!=to)
+					if(positions[from].x-positions[to].x>0)
 						planets=shiftArrayLeft(planets, 1);
-						move(planets,positions,map);
-					}
-					else{
-						planets=shiftArrayRight(planets, 1);
-						move(planets,positions,map);
-					}
-				}
-				if(distance>1){
-					modify(planets,positions,map,distance);
-				}
+					else
+						planets=shiftArrayRight(planets, 1);		
+				
+				move(planets,positions,map);
 			}
 		});
 
 		loader.start();  // starts preloader
 		planetFormation(planets,orbit,positions);	
+
+		function shiftArrayRight(arr, count){
+			for(i=0; i<count; i++)
+				arr.unshift(arr.pop());
+			return arr;
+		}
+		
+		function shiftArrayLeft(arr, count){
+			for(i=0; i<count; i++)
+				arr.push(arr.shift(arr[0]));
+			return arr;
+		}
 		
 		$('.planets').bind('transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function(){
 			press = false;
@@ -166,7 +152,7 @@
 				}
 				else if(event.keyCode==39){
 					planets=shiftArrayRight(planets, 1);
-					move(planets,positions,map);
+					move(planets,positions,map, 1);
 				}	
 				press=true;
 			}
