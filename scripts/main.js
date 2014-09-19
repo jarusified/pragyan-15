@@ -53,31 +53,6 @@
 	// home page stuff
 
  	function planetFormation(planets,orbit,positions){
- 		/*if(planets.length%2!=0){
- 			var mid=Math.floor(planets.length/2);
- 			for(var i=1;i<=mid;i++){
- 				theta=-(((i*360)/planets.length)+90)*Math.PI/180;
-				x=orbit.h+orbit.a*Math.cos(theta);
-				y=orbit.k+orbit.b*Math.sin(theta);
-				positions.push({'angle':theta,'name':planets[i].id,'x':x,'y':y});
-			}
-			x=orbit.h+orbit.a*Math.cos(0.5*Math.PI);
-			y=orbit.k+orbit.b*Math.sin(0.5*Math.PI);
- 			positions.push({'angle':0.5*Math.PI,'name':planets[mid].id,'x':x,'y':y});
-			for(var i=mid;i>0;--i){
-				theta=(((i*360)/planets.length)+90)*Math.PI/180;
-				x=orbit.h+orbit.a*Math.cos(theta);
-				y=orbit.k+orbit.b*Math.sin(theta);
-				positions.push({'angle':theta,'name':planets[planets.length-i].id,'x':x,'y':y});
-			}
- 		}
- 		console.log(positions);
- 		console.log(planets);
- 		
-		for(var i=0;i<positions.length;i++){
-			console.log(positions[i].name);
-			$('#'+positions[i].name).css({'left':positions[i].x+'%','top':positions[i].y+'%'});
-		}*/
 
 		for(var i=0;i<planets.length;i++){
 			theta=(((i*360)/planets.length)+90)*Math.PI/180;
@@ -87,45 +62,26 @@
 			$('#'+planets[i].id).css({'left':x+'%','top':y+'%'});
 		}
 	}
-	function elements(counter,arr) {
-  		var currentItem = arr[counter];
-  		var priorItem = arr[counter - 1] ? arr[counter - 1] : arr[arr.length - 1];
-  		var nextItem = arr[counter + 1] ? arr[counter + 1] : arr[0];
-  		return currentItem.name;
-
-	}
-
-
-
+	
 	function move(planets,positions,map){
 
 		for(var i=0;i<positions.length;i++){	
 			$('#'+planets[i].id).removeClass('planet-current planet-neighbour planet-others').addClass(map[i]);
-			console.log(planets[i],map[i]);
+			//$('#bg-img img').removeClass('bg-zoom').addClass('bg-zoom');
 			$('#'+planets[i].id).animate({'top':positions[i].y+'%','left':positions[i].x+'%'}, 1000);
 
 		}
 	}
 
 
-
 	function init(){
 		//variables
 		var aspectRatio = window.innerWidth/window.innerHeight;
-		var orbit;
-		if(aspectRatio<5/4)
-			orbit={
+		var orbit={
 				h:50,
-				k:25,
+				k:60,
 				a:40,
-				b:15
-			};
-		else
-			orbit={
-				h:50,
-				k:50,
-				a:40,
-				b:15
+				b:0
 			};
 
 		var planets=$('.planets').toArray(),
@@ -139,41 +95,63 @@
 		},
 		direction = true, //forward
 		press=false,
+		animationComplete = false,
 		positions=[];
 		var map=['planet-current','planet-neighbour','planet-others','planet-others', 'planet-neighbour'];
 
 		document.addEventListener('keydown',onkeydown,false);
 		document.addEventListener('keyup',onkeyup,false);
+		
+		var planet_id = [], from, to;
 
+		$('.planets').click(function(event){
+			if($('#'+this.id).hasClass('planets')){
+				for(i=0; i<planets.length; i++){
+					planet_id[i] = planets[i].id;
+				}
+				to = planet_id.indexOf(this.id);
+				from = planet_id.indexOf($('.planet-current').attr('id'));
+				console.log(positions[from].x, positions[to].x);
+				
+				if(from!=to)
+					if(positions[from].x-positions[to].x>0)
+						planets=shiftArrayLeft(planets, 1);
+					else
+						planets=shiftArrayRight(planets, 1);		
+				
+				move(planets,positions,map);
+			}
+		});
 
 		loader.start();  // starts preloader
 		planetFormation(planets,orbit,positions);	
 
-		function shiftArrayRight(arr){
-			arr.unshift(arr.pop());
+		function shiftArrayRight(arr, count){
+			for(i=0; i<count; i++)
+				arr.unshift(arr.pop());
 			return arr;
 		}
 		
-		function shiftArrayLeft(arr){
-			arr.push(arr.shift(arr[0]));
+		function shiftArrayLeft(arr, count){
+			for(i=0; i<count; i++)
+				arr.push(arr.shift(arr[0]));
 			return arr;
 		}
 		
 		$('.planets').bind('transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function(){
 			press = false;
-				console.log('aaaa');
 		});
 		
 		function onkeydown(event){
 
 			if(!press){
 				if(event.keyCode==37){
-					arr=shiftArrayLeft(planets);
-					move(arr,positions,map);
+					planets=shiftArrayLeft(planets, 1);
+					move(planets,positions,map);
 				}
 				else if(event.keyCode==39){
-					arr=shiftArrayRight(planets);
-					move(arr,positions,map);
+					planets=shiftArrayRight(planets, 1);
+					move(planets,positions,map, 1);
 				}	
 				press=true;
 			}
