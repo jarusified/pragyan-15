@@ -37,7 +37,7 @@
 
 		//fadeout when loading completes
 		if(value==5){
-			$('#loading-container').delay(3000).fadeOut(function(){
+			$('#loading-container').delay(0).fadeOut(function(){
 				$('#main').fadeIn();
 			});	
 		}
