@@ -65,14 +65,26 @@
 	}
 	
 	function move(planets,positions,map){
+	  
+	  $('#capsule').removeClass('planets-zoom-in planets-zoom-out').addClass('planets-zoom-out').bind('animationend	animationend webkitAnimationEnd oanimationend MSAnimationEnd', function(){
+		for(var i=0;i<positions.length;i++){	
+			$('#'+planets[i].id).removeClass('planet-current planet-neighbour planet-others').addClass(map[i]).bind('transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function(){
+			    $('#capsule').removeClass('planets-zoom-in planets-zoom-out').addClass('planets-zoom-in');	
+			});
+			$('#'+planets[i].id).animate({'top':positions[i].y+'%','left':positions[i].x+'%'}, 1000);				
+			//$('#bg-img img').removeClass('bg-zoom-in bg-zoom-out').addClass('bg-zoom-out');
+			//$('#planet-set').removeClass('planets-zoom-in planets-zoom-out').addClass('planets-zoom-out');
+			//$('#'+planets[i].id).animate({'top':positions[i].y+'%','left':positions[i].x+'%'}, 1000);
 
 		for(var i=0;i<positions.length;i++){
 			console.log($('#sponsors'));	
 			$('#'+planets[i].id).removeClass('planet-current planet-neighbour planet-others').addClass(map[i]);
 			//$('#bg-img img').removeClass('bg-zoom').addClass('bg-zoom');
 			$('#'+planets[i].id).animate({'top':positions[i].y+'%','left':positions[i].x+'%'}, 1000);
-
 		}
+		$('#bg-img img').removeClass('bg-rotate-right bg-rotate-left').addClass('bg-rotate-left');
+	  });
+	
 	}
 
 
