@@ -1,0 +1,203 @@
+html,body{
+	width:100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	padding:0;
+	margin:0;
+}
+#bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+}
+#container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+}
+.active{
+	background-color: white;
+}
+/* header style*/
+header{
+	width: 100%;
+	height: 7%;
+	position: absolute;
+}
+#header-pragyan{
+	width:15%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+#header-pragyan img{
+	width:25%;
+	height: 100%;
+	position: absolute;
+	z-index: 5;
+}
+#header-float{
+	width:40%;
+	height: 100%;
+	position: absolute;
+	right:0;
+	top:0;
+	overflow: hidden;	
+}
+.tag{
+	width: 20%;
+	height: 100%;
+	position: relative;
+	float: left;
+	z-index: 10;
+	cursor: pointer;
+}
+.tag-small{
+	width: 10%;
+	height: 100%;
+	position: relative;
+	float: left;
+	z-index: 10;
+	cursor: pointer;
+}
+.tag-pragyan{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	float: left;
+	z-index: 10;	
+	cursor: pointer;
+}
+/* highlight by URL */
+.tag-highlight{
+	width: 20%;
+	height: 100%;
+	position: relative;
+	float: left;
+	z-index: 10;
+	cursor: pointer;
+	background-color: rgba(39,39,39,1);
+}
+.text{
+	position: relative;
+	color: white;
+	top:50%;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	z-index: 10;	
+	letter-spacing: 1px;
+	opacity: 0.9;
+	margin: -5% 0 0 -5%;
+}
+.text:hover{
+	opacity: 1;
+}
+.text-pragyan{
+	position: relative;
+	color: white;
+	top:50%;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	z-index: 10;	
+	letter-spacing: 1px;
+	opacity: 0.9;
+	margin: -5% 0 0 -5%;
+}
+.text-pragyan:hover{
+	opacity: 1;
+}
+
+/* lines */
+.vertical-line{
+	width:1px;
+	height: 100%;
+	position: relative;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: rgb(156, 142, 142);
+	z-index: 10;
+	float: left;
+}
+
+.horizontal-line{
+	top:100%;
+	width:100%;
+	height: 1px;
+	position: absolute;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: rgb(156, 142, 142);
+	z-index: 10;
+	float: left;
+}
+
+/* background effect */
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(../../media/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(../../media/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+/*contacts page effects */
