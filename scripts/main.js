@@ -75,7 +75,7 @@
 			//$('#bg-img img').removeClass('bg-zoom-in bg-zoom-out').addClass('bg-zoom-out');
 			//$('#planet-set').removeClass('planets-zoom-in planets-zoom-out').addClass('planets-zoom-out');
 			//$('#'+planets[i].id).animate({'top':positions[i].y+'%','left':positions[i].x+'%'}, 1000);
-
+		}
 		for(var i=0;i<positions.length;i++){
 			console.log($('#sponsors'));	
 			$('#'+planets[i].id).removeClass('planet-current planet-neighbour planet-others').addClass(map[i]);

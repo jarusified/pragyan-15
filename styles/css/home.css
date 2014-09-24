@@ -249,6 +249,49 @@
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
+/* backgorund twinkling effect */
+.stars, .twinkling {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(../../media/home/planets/stars1.png) repeat top center;
+  z-index:1;
+}
+
+.twinkling{
+  background:transparent url(../../media/home/planets/twinkling.png) repeat top center;
+  z-index: 2;
+  -moz-animation:move-twink-back 1000s linear infinite;
+  -ms-animation:move-twink-back 1000s linear infinite;
+  -o-animation:move-twink-back 1000s linear infinite;
+  -webkit-animation:move-twink-back 1000s linear infinite;
+  animation:move-twink-back 1000s linear infinite;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 10000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 10000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 10000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 10000px;}
+}
 
 .bounce{
 
