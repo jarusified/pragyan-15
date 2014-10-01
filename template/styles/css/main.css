@@ -1,8 +1,8 @@
 html,body{
 	width:100%;
-	height: 100%;
+	height:100%;
 	position: absolute;
-	overflow: hidden;
+	 /* if u put overflow:hidden; it wont work*/
 	padding:0;
 	margin:0;
 }
@@ -21,6 +21,7 @@ html,body{
 .active{
 	background-color: white;
 }
+
 /* header style*/
 header{
 	width: 100%;
@@ -139,13 +140,13 @@ header{
 }
 
 /* background effect */
-.stars, .twinkling, .clouds {
+.stars, .twinkling {
   position:absolute;
   top:0;
   left:0;
   right:0;
   bottom:0;
-  width:100%;
+  width:150%;
   height:100%;
   display:block;
 }
@@ -183,69 +184,86 @@ header{
     to {background-position:-10000px 10000px;}
 }
 
+/* gallery css */
 
+#gallery-container{
+	opacity: 0;
+	position: absolute;
+	top:10%;
+	left:15%;
+	width: 80%;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+#gallery > a {
+	margin: 15px;
+	border-bottom-width: 5%;
+}
 
+#gallery > a img {
+	width:200px;
+	height: 200px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	opacity: 0.9;
+	
+	transition: all 500ms;
+	-webkit-transition: all 500ms;
+	-moz-transition: all 500ms;
+	-ms-transition: all 500ms;
+	-o-transition: all 500ms;
+	z-index: 1;
+	position: relative;
+}
 
-/*contacts page effects */
+#gallery > a img:hover {
+	border-color: black;
+	opacity: 1.0;
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	z-index: 10;
+}
+
+/*contacts css */
 #contacts{
 	position: absolute;
-	top:7%;
-	width:100%;
-	height:100%;
+	width:auto;
+	height: 50%;
+	top:10%;
+	overflow-x:scroll !important;
+	overflow-y:hidden !important;
+	white-space: nowrap;
+}
+.scroll{
+}
+.person{
+	display: inline-block;
 }
 
-#contacts-container {
- width:50%;
- height:auto;
- position: absolute;
- top:5%;
- left:25%;
+.person img{
+	top:20%;
+	left:25%;
+	width:200px;
+	height:200px;
+	border-radius: 100px;
+	-webkit-border-radius:100px;
+	-moz-border-radius:100px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
-
-.boxframe1 {
-  width:100%;
-  height:100%;
-  display:inline-block;
- -webkit-transition:all 1s;
-}
-
-.openFrame {
-  width: 100%;
-  height: 200px;
-}
-
-.size1, .size2, .size3 {
-  position:relative;
-  float:left;
-  top:25%;
-  left:25%;
-  overflow:hidden;
-  height: 100%;
-  width: 15%;
-  margin:3px;
-  background: #ccc;
-  -webkit-transition:all 1s;
-}
-
-.gallery {
-  width: 100%;
-  height: auto;
-  position:relative;
-  opacity: 0.2;
-  -webkit-transition:all 1s;
-  -webkit-filter: grayscale(100%); 
-}
-
-.fullshine {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 1;
-  -webkit-filter: grayscale(0%); 
-}
-
-.lastimg, .firstimg {
-  width: 0px !important;
-  opacity: 0;
-  margin: 0;
-}
+.text{
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	top:70%;
+	left:15%;
+	width:80%;
+	height:30%;
+}	
