@@ -22,12 +22,12 @@
   z-index: 1;
   background-color: rgb(0,0,12);
 }
-#bg-img img{
-  width: 300%;
-  height: 150%;
+#bg-img div{
+  width: 400%;
+  height: 400%;
   position: absolute;
-  left: -100%;
-  top: -25%;
+  left: -150%;
+  top: -150%;
   -webkit-transform-origin: 50% 50%;
   
   -webkit-transition:-webkit-transform 1.2s ease-out;
@@ -80,7 +80,7 @@
 
 
 .bg-rotate-left{  
-  -webkit-transform: translateX(5%) rotateZ(72deg);
+  -webkit-transform: translateX(-5%) rotateZ(-72deg);
 }
 .bg-rotate-right{
   -webkit-transform: translateX(5%);
@@ -256,8 +256,6 @@
   left:0;
   right:0;
   bottom:0;
-  width:100%;
-  height:100%;
   display:block;
 }
 
@@ -269,11 +267,11 @@
 .twinkling{
   background:transparent url(../../media/home/planets/twinkling.png) repeat top center;
   z-index: 2;
-  -moz-animation:move-twink-back 1000s linear infinite;
-  -ms-animation:move-twink-back 1000s linear infinite;
-  -o-animation:move-twink-back 1000s linear infinite;
-  -webkit-animation:move-twink-back 1000s linear infinite;
-  animation:move-twink-back 1000s linear infinite;
+  -moz-animation:move-twink-back 500s linear infinite;
+  -ms-animation:move-twink-back 500s linear infinite;
+  -o-animation:move-twink-back 500s linear infinite;
+  -webkit-animation:move-twink-back 500s linear infinite;
+  animation:move-twink-back 500s linear infinite;
 }
 
 @keyframes move-twink-back {
