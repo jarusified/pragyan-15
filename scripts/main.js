@@ -8,9 +8,7 @@
     	
 
  	//add images here
- 	var images=["1.png","2.png","3.png","4.png","5.png","loading.png","dummy/1.png",
- 				"dummy/2.png","dummy/3.png","dummy/4.png","dummy/5.png","dummy/6.png","dummy/7.png",
- 				"dummy/8.png","dummy/9.png","dummy/10.png","dummy/11.png","dummy/12.png","dummy/13.png","dummy/14.png","dummy/15.png"];
+ 	var images=["1.png","2.png","3.png","4.png","5.png","loading.png"];
 
 	for(var i=0; i<images.length ; i++) {
        	var pxImage = new PxLoaderImage(baseUrl+images[i]); 
@@ -116,6 +114,17 @@
 			$('.avgrund-cover').css({'display':'block'});
 		});
 		Avgrund.show('#'+elem);
+		if(elem=="gallery"){
+			$('#content-gallery').css('opacity',1);
+			$('#content').css('opacity',0);
+			$('#planet-cover').css('opacity',0);
+			$('#content-gallery').gallerie({
+					thumbboxTriggerWidth: 0.10,
+    				thumbboxSpeed: 0.5,
+    				imageEvent: 'click',
+				});
+			$('#content-gallery').gallerie('open');
+		}
 	}
 
 
@@ -172,6 +181,7 @@
 					a:70,
 					b:0
 				};
+				positions=[];
 				planetFormation(planets,shifted_orbit,positions);
 				openPage(this.id);
 			}
@@ -213,6 +223,7 @@
 					$('#capsule').animate({'bottom':'0%'}, 1000, function(){
 						press = false;
 					});
+					positions=[];
 					planetFormation(planets,orbit,positions);
 					content=false;
 					press = true;
