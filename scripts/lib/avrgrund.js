@@ -8,7 +8,7 @@
 var Avgrund = (function(){
 
 	var container = document.documentElement,
-		popup = document.querySelector( '.avgrund-popup-animate' ),
+		popup = document.querySelector( '.avgrund-popup' ),
 		cover = document.querySelector( '.avgrund-cover' ),
 		currentState = null;
 
@@ -33,14 +33,14 @@ var Avgrund = (function(){
 		document.addEventListener( 'click', onDocumentClick, false );
 		document.addEventListener( 'touchstart', onDocumentClick, false );
 
-		removeClass( popup, currentState );
+		/*removeClass( popup, currentState );
 		addClass( popup, 'no-transition' );
 		addClass( popup, state );
 
 		setTimeout( function() {
 			removeClass( popup, 'no-transition' );
 			addClass( container, 'avgrund-active' );
-		}, 0 );
+		}, 0 );*/
 
 		currentState = state;
 	}
@@ -51,7 +51,7 @@ var Avgrund = (function(){
 		document.removeEventListener( 'touchstart', onDocumentClick, false );
 
 		removeClass( container, 'avgrund-active' );
-		removeClass( popup, 'avgrund-popup-animate')
+		removeClass( popup, 'avgrund-popup')
 	}
 
 	function disableBlur() {
@@ -68,7 +68,7 @@ var Avgrund = (function(){
 
 	function show(selector){
 		popup = document.querySelector( selector );
-		addClass(popup, 'avgrund-popup-animate');
+		addClass(popup, 'avgrund-popup');
 		activate();
 		return this;
 	}

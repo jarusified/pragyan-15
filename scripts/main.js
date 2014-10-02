@@ -61,7 +61,7 @@
 		for(var i=0;i<planets.length;i++){
 			theta=(((i*360)/planets.length)+90)*Math.PI/180;
 			x=orbit.h+orbit.a*Math.cos(theta);
-			y=orbit.k+orbit.b*Math.sin(theta);
+ 				y=orbit.k+orbit.b*Math.sin(theta);
 			positions.push({'angle':theta,'x':x,'y':y});
 			$('#'+planets[i].id).animate({'left':x+'%', 'top':y+'%'},1000);
 			//$('#'+planets[i].id).css({'left':x+'%','top':y+'%'});
@@ -74,7 +74,8 @@
 	  $('#capsule').removeClass('planets-zoom-in planets-zoom-out').addClass('planets-zoom-out').bind('animationend	animationend webkitAnimationEnd oanimationend MSAnimationEnd', function(){
 	   if(animationEnd === false){
 	   	animationEnd = true;
-		for(var i=0;i<positions.length;i++){	
+	   	console.log(positions.length);
+		for(var i=0;i<planets.length;i++){	
 			$('#'+planets[i].id).removeClass('planet-current planet-neighbour planet-others').addClass(map[i]).bind('transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function(){
 			    $('#capsule').removeClass('planets-zoom-in planets-zoom-out').addClass('planets-zoom-in');	
 			});
@@ -90,6 +91,7 @@
 			$('#'+planets[i].id).animate({'top':positions[i].y+'%','left':positions[i].x+'%'}, 1000);
 		}*/
 		if(direction=='right'){
+			console.log('sdf');
 			if(count==0) count=4;
 			else count--; 
 			//console.log(count);
@@ -129,12 +131,6 @@
 		x,
 		y,
 		theta,
-		positions={
-			'name':'',
-			x:0,
-			y:0
-		},
-		direction = true, //forward
 		press=false,
 		content=false,
 		animationComplete = false,
@@ -204,13 +200,14 @@
 
 			if(!press){
 				if(event.keyCode==27){
+					Avgrund.deactivate();
 					for(var i=0;i<planets.length;i++){
 						if($('#'+planets[i].id).hasClass('planet-current-scale')){
 							$('#'+planets[i].id).removeClass('planet-current-scale').addClass('planet-current');
 						}
 					}
 					$('.planets img').css('opacity',1.0);
-					$('#capsule').animate({'bottom':'0%'}, 1000);
+					$('#capsule').animate({'bottom':'0%'}, 500);
 					planetFormation(planets,orbit,positions);
 					content=false;
 				}
