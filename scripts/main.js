@@ -136,6 +136,7 @@
 		},
 		direction = true, //forward
 		press=false,
+		content=false,
 		animationComplete = false,
 		positions=[];
 		var map=['planet-current','planet-neighbour','planet-others','planet-others', 'planet-neighbour'];
@@ -165,6 +166,7 @@
 					}
 			}
 			if($('#'+this.id).hasClass('planet-current')){
+				content=true;
 				$('#'+this.id).removeClass('planet-current').addClass('planet-current-scale');
 				var shifted_orbit={
 					h:50,
@@ -210,12 +212,13 @@
 					$('.planets img').css('opacity',1.0);
 					$('#capsule').animate({'bottom':'0%'}, 1000);
 					planetFormation(planets,orbit,positions);
+					content=false;
 				}
-				if(event.keyCode==37){
+				if(event.keyCode==37 && !content){
 					planets=shiftArrayLeft(planets, 1);
 					move(planets,positions,map,'left');
 				}
-				else if(event.keyCode==39){
+				else if(event.keyCode==39 && !content){
 					planets=shiftArrayRight(planets, 1);
 					move(planets,positions,map,'right');
 				}	
