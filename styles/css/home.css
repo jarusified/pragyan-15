@@ -20,6 +20,7 @@
 }
 #planet-set{
   position: absolute;
+  z-index: 5;
 }
 #bg-img{
   width: 100%;
@@ -101,8 +102,33 @@
   -webkit-transform: translateX(5%);
 }
 
-.avground-cover{
-  background: black;
+.avgrund-cover{
+  z-index: 1;
+}
+#content{
+  width: 90%;
+  height: 60%;
+  top: 0;
+  left: 5%;
+  position: fixed;
+  z-index: 1;
+  background: rgb(25,25,25);
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+#planet-cover{
+  width: 90%;
+  height: 40%;
+  top: 60%; 
+  left: 5%;
+  position: fixed;
+  /* the inverse circle "cut" */
+  background-image: radial-gradient(circle at 50% 100%, transparent, transparent 35%, rgb(25,25,25) 40%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-right: 1px solid white;
+  border-left: 1px solid white;  
+  z-index: 2;
 }
 
 .planets-zoom-in{

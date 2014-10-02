@@ -111,8 +111,10 @@
 	}
 
 	function openPage(elem){
-		$('.planets img').animate({'opacity':0.2}, 1000);
-		$('#capsule').animate({'bottom':'-45%'}, 1000);
+		$('.planets img').animate({'opacity':0.2}, 500);
+		$('#capsule').animate({'bottom':'-40%'}, 1000, function(){
+			$('.avgrund-cover').css({'display':'block'});
+		});
 		Avgrund.show('#'+elem);
 	}
 
@@ -122,9 +124,9 @@
 		var aspectRatio = window.innerWidth/window.innerHeight;
 		var orbit={
 				h:50,
-				k:60,
+				k:65,
 				a:40,
-				b:0
+				b:-5
 			};
 
 		var planets=$('.planets').toArray(),
@@ -200,26 +202,31 @@
 
 			if(!press){
 				if(event.keyCode==27){
+					$('.avgrund-cover').css({'display':'none'});
 					Avgrund.deactivate();
 					for(var i=0;i<planets.length;i++){
 						if($('#'+planets[i].id).hasClass('planet-current-scale')){
 							$('#'+planets[i].id).removeClass('planet-current-scale').addClass('planet-current');
 						}
 					}
-					$('.planets img').css('opacity',1.0);
-					$('#capsule').animate({'bottom':'0%'}, 500);
+					$('.planets img').animate({'opacity':1.0}, 500);
+					$('#capsule').animate({'bottom':'0%'}, 1000, function(){
+						press = false;
+					});
 					planetFormation(planets,orbit,positions);
 					content=false;
+					press = true;
 				}
-				if(event.keyCode==37 && !content){
+				else if(event.keyCode==37 && !content){
 					planets=shiftArrayLeft(planets, 1);
 					move(planets,positions,map,'left');
+					press=true;
 				}
 				else if(event.keyCode==39 && !content){
 					planets=shiftArrayRight(planets, 1);
 					move(planets,positions,map,'right');
+					press=true;
 				}	
-				press=true;
 			}
 
 		}	
