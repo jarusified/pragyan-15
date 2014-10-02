@@ -187,7 +187,7 @@ header{
 /* gallery css */
 
 #gallery-container{
-	opacity: 0;
+	opacity: 1;
 	position: absolute;
 	top:10%;
 	left:15%;
@@ -231,6 +231,7 @@ header{
 
 /*contacts css */
 #contacts{
+	opacity: 0;
 	position: absolute;
 	width:auto;
 	height: 50%;

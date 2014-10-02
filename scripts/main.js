@@ -63,7 +63,8 @@
 			x=orbit.h+orbit.a*Math.cos(theta);
 			y=orbit.k+orbit.b*Math.sin(theta);
 			positions.push({'angle':theta,'x':x,'y':y});
-			$('#'+planets[i].id).css({'left':x+'%','top':y+'%'});
+			$('#'+planets[i].id).animate({'left':x+'%', 'top':y+'%'},1000);
+			//$('#'+planets[i].id).css({'left':x+'%','top':y+'%'});
 			//$('#'+planets[i].id).toggle('bounce',{ times: 3},"slow");
 		}
 	}
@@ -91,20 +92,25 @@
 		if(direction=='right'){
 			if(count==0) count=4;
 			else count--; 
-			console.log(count);
+			//console.log(count);
 			rotateWorld -= 72;
 			$('#bg-img div').css('-webkit-transform', 'translateX('+translateWorld[count]+'%) rotateZ('+rotateWorld+'deg)');
 		}
 		else if(direction=='left'){
 			if(count==4) count=0;
 			else count++;
-			console.log(count);
+			//console.log(count);
 			rotateWorld += 72;
 			$('#bg-img div').css('-webkit-transform', 'translateX('+translateWorld[count]+'%) rotateZ('+rotateWorld+'deg)');
 		}
 	   }
 	  });
 	
+	}
+
+	function openPage(elem){
+		$('.planets img').css('opacity',0.5);
+		Avgrund.show('#'+elem);
 	}
 
 
@@ -145,7 +151,7 @@
 				}
 				to = planet_id.indexOf(this.id);
 				from = planet_id.indexOf($('.planet-current').attr('id'));
-				console.log(positions[from].x, positions[to].x);
+				//console.log(positions[from].x, positions[to].x);
 				
 				if(from!=to)
 					if(positions[from].x-positions[to].x>0){
@@ -157,7 +163,20 @@
 						move(planets,positions,map,'right');		
 					}
 			}
+			if($('#'+this.id).hasClass('planet-current')){
+				$('#'+this.id).removeClass('planet-current').addClass('planet-current-scale');
+				var shifted_orbit={
+					h:50,
+					k:60,
+					a:70,
+					b:0
+				};
+				planetFormation(planets,shifted_orbit,positions);
+				openPage(this.id);
+			}
 		});
+
+
 
 		loader.start();  // starts preloader
 		planetFormation(planets,orbit,positions);	
@@ -181,6 +200,15 @@
 		function onkeydown(event){
 
 			if(!press){
+				if(event.keyCode==27){
+					for(var i=0;i<planets.length;i++){
+						if($('#'+planets[i].id).hasClass('planet-current-scale')){
+							$('#'+planets[i].id).removeClass('planet-current-scale').addClass('planet-current');
+						}
+					}
+					$('.planets img').css('opacity',1.0);
+					planetFormation(planets,orbit,positions);
+				}
 				if(event.keyCode==37){
 					planets=shiftArrayLeft(planets, 1);
 					move(planets,positions,map,'left');

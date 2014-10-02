@@ -77,8 +77,14 @@
   height: auto;
   position: absolute;
 }
-
-
+.planet-current-scale{
+  -webkit-transform:scale(1.2,1.2);
+  -moz-transform:scale(1.2,1.2);
+  -ms-transform:scale(1.2,1.2);
+  -o-transform:scale(1.2,1.2);
+  transform:scale(1.2,1.2);
+  z-index: 5
+}
 .bg-rotate-left{  
   -webkit-transform: translateX(-5%) rotateZ(-72deg);
 }
@@ -355,3 +361,4 @@
             transform: translate3d(0,-4px,0);
   }
 }
+
