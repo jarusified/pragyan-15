@@ -80,7 +80,7 @@ Released under MIT LICENSE
 					
 					
 			$overlay.on('click.gallerie', function(event){
-				$this.gallerie('close');
+				//$this.gallerie('close');
 			});
 			
 			$overlay.on('click.gallerie', '.gallerie-control-previous', function(event){
