@@ -23,7 +23,6 @@
 	z-index: 1;
 	visibility: hidden;
 	opacity: 100;
-	background: rgba( 155, 155, 155, 0.5 );
 }
 	.avgrund-active .avgrund-cover {
 		visibility: visible;

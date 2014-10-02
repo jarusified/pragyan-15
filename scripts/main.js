@@ -109,7 +109,8 @@
 	}
 
 	function openPage(elem){
-		$('.planets img').css('opacity',0.5);
+		$('.planets img').animate({'opacity':0.2}, 1000);
+		$('#capsule').animate({'bottom':'-45%'}, 1000);
 		Avgrund.show('#'+elem);
 	}
 
@@ -207,6 +208,7 @@
 						}
 					}
 					$('.planets img').css('opacity',1.0);
+					$('#capsule').animate({'bottom':'0%'}, 1000);
 					planetFormation(planets,orbit,positions);
 				}
 				if(event.keyCode==37){
