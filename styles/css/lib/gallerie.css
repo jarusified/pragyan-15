@@ -62,7 +62,6 @@ div.gallerie-loading {
 }
 
 .gallerie-control:hover {
-	background: white;
 	color: black;
 	border-radius: 100%;
 	cursor: pointer;
@@ -117,7 +116,6 @@ div.gallerie-loading {
 	border-radius: 5px;
 	width: 400px !important;
 	height: auto !important;
-	background: white;
 
 	transition: all 500ms;
 	-webkit-transition: all 500ms;

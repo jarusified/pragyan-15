@@ -137,8 +137,23 @@
 		}
 	}
 
-
-
+	function startAnimation(planets){
+		var starting_orbit={
+				h:50,
+				k:50,
+				a:40,
+				b:0
+		};
+		positions=[];
+		setTimeout(function(){
+			$('#capsule').css('transform','scale(1.0,1.0)');
+		},1500);
+		
+		planetFormation(planets,starting_orbit,positions);
+		//$('#planet-set').animate({scale:'1'},1000,function(){
+		//	console.log('df');
+		//});
+	}
 
 	function init(){
 		//variables
@@ -162,7 +177,7 @@
 
 		// scroll bar
 //		$('#content-contacts').jScrollPane();
-
+		startAnimation(planets)
 		document.addEventListener('keydown',onkeydown,false);
 		document.addEventListener('keyup',onkeyup,false);
 		
