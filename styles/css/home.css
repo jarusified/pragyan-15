@@ -444,6 +444,7 @@
   position: relative;
 }
 .picture{
+    perspective: 250px;
 }
 .picture img{
   width:50%;
@@ -453,6 +454,13 @@
   box-shadow: 0 0 8px rgba(255,255,255, .8);
   -webkit-box-shadow: 0 0 8px rgba(255,255,255, .8);
   -moz-box-shadow: 0 0 8px rgba(255,255,255, .8);
+  transition: 100ms;
+  transform: translateZ(0px);
+  box-shadow: 0px 0px 0px rgba(0,0,0,0)
+}
+.picture img:hover{
+  transform: translateZ(25px) rotate(3deg);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
 }
 .text{
   font-family: 'Lato', sans-serif;

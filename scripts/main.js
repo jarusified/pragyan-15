@@ -137,6 +137,8 @@
 	}
 
 
+
+
 	function init(){
 		//variables
 		var aspectRatio = window.innerWidth/window.innerHeight;
@@ -163,6 +165,7 @@
 		document.addEventListener('keydown',onkeydown,false);
 		document.addEventListener('keyup',onkeyup,false);
 		
+
 		var planet_id = [], from, to;
 
 		$('.planets').click(function(event){
@@ -258,4 +261,5 @@
 		}	
 	}
 	init();
+
 }(window.jQuery);

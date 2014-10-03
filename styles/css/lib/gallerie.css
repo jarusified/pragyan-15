@@ -98,6 +98,7 @@ div.gallerie-loading {
 }
 
 .gallerie-imagebox img {
+	
 	position: absolute;
 	top: 25%;
 	bottom: 0px;

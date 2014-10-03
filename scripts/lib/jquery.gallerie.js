@@ -480,6 +480,9 @@ Released under MIT LICENSE
 					var $this = $(this),
 						options = $this.data('gallerie')['options'],
 						$thumbBox = $this.find('.gallerie-thumbbox');
+					$('#'+this.id).hide().fadeIn('slow',function(){
+						console.log('sf');
+					});
 						
 					var $selectedItem = $thumbBox.find('.gallerie-thumbbox-selected'),
 						$nextItem = $selectedItem.next();
@@ -498,9 +501,13 @@ Released under MIT LICENSE
 			
 			previous : function(){
 				return this.each(function(){
+					console.log(this);
 					var $this = $(this),
 						options = $this.data('gallerie')['options'],
 						$thumbBox = $this.find('.gallerie-thumbbox');
+					$('#'+this.id).hide().fadeIn('slow',function(){
+						console.log('sf');
+					});
 						
 					var $selectedItem = $thumbBox.find('.gallerie-thumbbox-selected'),
 						$prevItem = $selectedItem.prev();
