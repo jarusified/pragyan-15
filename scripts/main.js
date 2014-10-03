@@ -150,9 +150,6 @@
 		},1500);
 		
 		planetFormation(planets,starting_orbit,positions);
-		//$('#planet-set').animate({scale:'1'},1000,function(){
-		//	console.log('df');
-		//});
 	}
 
 	function init(){
