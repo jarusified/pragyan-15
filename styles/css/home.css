@@ -1,6 +1,13 @@
-#body{
-  background-color: black;
-}
+/*For Coming Soon Page*/
+/*Do Not Delete*/
+/*
+*******
+-webkit-transform: translateX(-150px) translateY(150px) scale(0.5);
+margin-top: -75px;
+*******
+*/
+
+
 #main{
   width: 100%;
   position: absolute;
@@ -36,7 +43,6 @@
 }
 #capsule{
   position: fixed;
-  transform:scale(0.2,0.2);
 }
 #planet-set{
   position: absolute;
@@ -47,13 +53,14 @@
   height: 100%;
   position: absolute;
   z-index: 1;
+  background-color: rgb(0,0,12);
 }
 #bg-img div{
-  width: 400%;
-  height: 400%;
+  width: 600%;
+  height: 600%;
   position: absolute;
-  left: -150%;
-  top: -150%;
+  left: -250%;
+  top: -250%;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 

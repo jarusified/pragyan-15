@@ -62,7 +62,7 @@ div.gallerie-loading {
 }
 
 .gallerie-control:hover {
-	color: black;
+	color: rgb(151,151,151);
 	border-radius: 100%;
 	cursor: pointer;
 }
