@@ -118,6 +118,7 @@
 
 	function openPage(elem){
 		$('.planets img').animate({'opacity':0.7}, 500);
+		$('#footer').fadeOut('slow');
 		$('#capsule').animate({'bottom':'-45%'}, 1000, function(){
 			$('.content-divs').css({'display':'none'});
 			$('#content-'+elem).css({'display':'block'});
@@ -202,7 +203,9 @@
 			}
 		});
 
-
+		$('.content-close').click(function(){
+			closeModal();
+		});
 
 		loader.start();  // starts preloader
 		planetFormation(planets,orbit,positions);	
@@ -223,28 +226,33 @@
 			press = false;
 		});
 		
+		function closeModal(){
+			$('#footer').fadeIn('slow');
+			$('.avgrund-cover').css({'display':'none'});
+			$('#content').css({'top':'15%', 'opacity':0});
+			$('#planet-cover').css({'opacity':0});
+			//$('.avgrund-cover').fadeOut(500);
+			//Avgrund.deactivate();
+			for(var i=0;i<planets.length;i++){
+				if($('#'+planets[i].id).hasClass('planet-current-scale')){
+					$('#'+planets[i].id).removeClass('planet-current-scale').addClass('planet-current');
+				}
+			}
+			$('.planets img').animate({'opacity':1.0}, 500);
+			$('#capsule').animate({'bottom':'0%'}, 1000, function(){
+				press = false;
+			});
+			positions=[];
+			planetFormation(planets,orbit,positions);
+			content=false;
+			press = true;
+		}
+	
 		function onkeydown(event){
 
 			if(!press){
 				if(event.keyCode==27){
-					$('.avgrund-cover').css({'display':'none'});
-					$('#content').css({'top':'15%', 'opacity':0});
-					$('#planet-cover').css({'opacity':0});
-					//$('.avgrund-cover').fadeOut(500);
-					//Avgrund.deactivate();
-					for(var i=0;i<planets.length;i++){
-						if($('#'+planets[i].id).hasClass('planet-current-scale')){
-							$('#'+planets[i].id).removeClass('planet-current-scale').addClass('planet-current');
-						}
-					}
-					$('.planets img').animate({'opacity':1.0}, 500);
-					$('#capsule').animate({'bottom':'0%'}, 1000, function(){
-						press = false;
-					});
-					positions=[];
-					planetFormation(planets,orbit,positions);
-					content=false;
-					press = true;
+					closeModal();
 				}
 				else if(event.keyCode==37 && !content){
 					planets=shiftArrayLeft(planets, 1);
@@ -261,5 +269,5 @@
 		}	
 	}
 	init();
-
+		
 }(window.jQuery);

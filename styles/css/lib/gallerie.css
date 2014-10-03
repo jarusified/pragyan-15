@@ -9,15 +9,16 @@ div.gallerie-loading {
 	height: 22px;
 	margin: auto;
 	z-index: 10000;
-	background: url("loading.gif");
+	background: url("image-loading.gif");
 }
 
 /* Image Index and Title Text */
 .gallerie-text {
 	max-width: 60%;
 	min-width: 200px;
-	margin: 20px 10px;
+	margin: 20px 25px;
 	vertical-align: bottom;
+	display: none !important;
 }
 
 .gallerie-text div {
@@ -40,9 +41,8 @@ div.gallerie-loading {
 	font-size: 30px;
 	min-width: 40px;
 	min-height: 40px;
-	padding: 5px;
+	padding: 3px;
 	margin: 0px;
-	border: 2px solid transparent;
 	vertical-align: top;
 	
 	border-radius: 100%;
@@ -54,25 +54,33 @@ div.gallerie-loading {
 	-ms-user-select: none;
 	user-select: none;
 	
-	transition: all 500ms;
-		-webkit-transition: all 500ms;
-		-moz-transition: all 500ms;
-		-ms-transition: all 500ms;
-		-o-transition: all 500ms;
+	transition: all 200ms;
+	-webkit-transition: all 200ms;
+	-moz-transition: all 200ms;
+	-ms-transition: all 200ms;
+	-o-transition: all 200ms;
 }
 
 .gallerie-control:hover {
-	background: #222;
-	border: 2px solid white;
+	background: white;
+	color: black;
 	border-radius: 100%;
 	cursor: pointer;
 }
 
 .gallerie-control-previous{
-	
+	position: absolute;
+	left: 2px;
+  -webkit-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -ms-transform:rotate(180deg);
+  -o-transform:rotate(180deg);
+  transform:rotate(180deg);
 }
 
 .gallerie-control-next {
+	position: absolute;
+	right: 2px;
 }
 
 /* Gallery Overlay */
@@ -83,31 +91,31 @@ div.gallerie-loading {
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	background-color:rgba(0,0,0,0.5);
-	z-index: 1000;
+	z-index: 50;
 }
 
 /* Image Box Container */
 .gallerie-imagebox {
 	width: 100%;
-	height: 50% !important;
+	height: 94% !important;
 	position: relative;
-	top: 10%;
+	top: 3%;
 	left: 0px;
-	margin: 20px 0px;
+	margin: 0px 0px;
+	overflow: hidden;
 }
 
 .gallerie-imagebox img {
 	
 	position: absolute;
-	top: 25%;
+	top: 0%;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
 	margin: auto;
-	border: 4px solid white;
+	border: 2px solid rgb(185,185,185);
 	border-radius: 5px;
-	width: 200px !important;
+	width: 400px !important;
 	height: auto !important;
 	background: white;
 
@@ -131,11 +139,12 @@ div.gallerie-loading {
 	color: white;
 	width: 100%;
 	height: 50px;
-	position: relative;
-	top: 22%;
+	position: absolute;
+	top: 50%;
 	left: 0px;
+	margin-top: -25px;
 	text-align: center;
-	padding: 5px 0px 15px 0px;
+	padding: 0px 0px 15px 0px;
 	z-index: 2;
 }
 
