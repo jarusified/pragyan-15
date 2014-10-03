@@ -42,11 +42,11 @@
     -o-transform-origin: 50% 50%;
     -ms-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    -webkit-transition:all .5s ease-out;
-    -moz-transition:all .5s ease-out;
-    -o-transition:all .5s ease-out;
-    -ms-transition:all .5s ease-out;
-    transition:all .5s ease-out;
+    -webkit-transition:all 2s ease-out;
+    -moz-transition:all 2s ease-out;
+    -o-transition:all 2s ease-out;
+    -ms-transition:all 2s ease-out;
+    transition:all 2s ease-out;
     }
 
     #logo-one img{
@@ -114,12 +114,46 @@
     text-align: center;
     top:40%;
     }
+    #main-logo{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 35%;
+    left: 55%;
+    width: 25%;
+    margin-left: -12.5%;
+    text-align: center;
+    }
+    #cs-text{
+    color: white;
+    }
+    #logo{
+    -webkit-transition:all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -o-transition:all 1s ease-in-out;
+    -ms-transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out;
+    }
+    .resize{
+    -webkit-transform: translateX(-150px) translateY(150px) scale(0.5);
+    -moz-transform: translateX(-150px) translateY(150px) scale(0.5);
+    -o-transform: translateX(-150px) translateY(150px) scale(0.5);
+    -ms-transform: translateX(-150px) translateY(150px) scale(0.5);
+    transform: translateX(-150px) translateY(150px) scale(0.5);
+    margin-top: -75px;
+    }
+
     </style>
 </head>
 
 <body>
     <div id="texture"></div>
-
+    <div id='main-logo'>
+        <img src='' />
+        <div id='cs-text'>
+            Coming Soon
+        </div>
+    </div>
     <div id="logo">
         <div class="logo-img" id="logo-one"><img src=
         "./media/loading/1.png"></div>
@@ -157,13 +191,16 @@
         }
         var i=0;
         var timer=setInterval(function(){
-            if(i<=5){
-                console.log(i);
+            if(i<5){
                 i+=1;
                 initialise(i);
             }
             else{
                 clearInterval(timer);
+                $(states[i-1]).bind('transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function(){
+                    $('#logo').addClass('resize');
+                    $('#main-logo').delay(1000).fadeIn(500);    
+                });
             }
         },500);
 
