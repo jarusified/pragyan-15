@@ -28,7 +28,7 @@
     background-position: 0 0pt, 4px 4px;
     background-size: 8px 8px;*/
     background-color: #333333;
-    background: url('../media/dummy/back2.png');
+    background: #0F1217 url('../media/bg.png');
     background-size: 100% 105%;
     }
 
