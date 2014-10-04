@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Coming-Soon</title>
+    <title>Pragyan'15 Coming-Soon</title>
     <script src="../scripts/lib/jquery.min.js" type="text/javascript"></script>
     <style type="text/css">
     @font-face{
