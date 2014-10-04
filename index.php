@@ -1,3 +1,6 @@
+<?php
+header('Location: comingsoon/');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,8 +48,10 @@
 	</div>
 	<div id="main">
 	  <div id='header'>
+	  	<img src='./media/header.png' />
 	  </div>
 	  <div id='footer'>
+	    <img src="./media/header.png" />
 	  </div>
 	  <div class="avgrund-cover">
 	  	<div id='content'>
@@ -57,7 +62,7 @@
 						<div class='picture'>
 							<img src="./media/suraj.jpg"/>
 						</div>
-						<div class="text">
+						<div class="text text-font">
 							<div  class="person-name">asknaksna</div>
 							<div  class="person-desig">askn alkn la  a</div>
 							<div  class="person-contact">asknka al ankn an</div>
@@ -67,7 +72,7 @@
 						<div class='picture'>
 							<img src="./media/suraj.jpg"/>
 						</div>
-						<div class="text">
+						<div class="text text-font">
 							<div  class="person-name">asknaksna</div>
 							<div  class="person-desig">askn alkn la  a</div>
 							<div  class="person-contact">asknka al ankn an</div>
@@ -77,7 +82,7 @@
 						<div class='picture'>
 							<img src="./media/suraj.jpg"/>
 						</div>
-						<div class="text">
+						<div class="text text-font">
 							<div  class="person-name">asknaksna</div>
 							<div  class="person-desig">askn alkn la  a</div>
 							<div  class="person-contact">asknka al ankn an</div>
@@ -87,7 +92,7 @@
 						<div class='picture'>
 							<img src="./media/suraj.jpg"/>
 						</div>
-						<div class="text">
+						<div class="text text-font">
 							<div  class="person-name">asknaksna</div>
 							<div  class="person-desig">askn alkn la  a</div>
 							<div  class="person-contact">asknka al ankn an</div>
@@ -97,30 +102,30 @@
 						<div class='picture'>
 							<img src="./media/suraj.jpg"/>
 						</div>
-						<div class="text">
+						<div class="text text-font">
 						</div>
 					</div>
 					<div class="person">
 						<div class='picture'>
 							<img src="./media/suraj.jpg"/>
 						</div>
-						<div class="text">
+						<div class="text text-font">
 						</div>
 					</div>
 					<div class="person">
 						<div class='picture'>
 							<img src="./media/suraj.jpg"/>
 						</div>
-						<div class="text">
+						<div class="text text-font">
 						</div>
 					</div>
 				</div>
 			</div>
 			<div id="content-gallery" class='content-divs'>
 				<a href="./media/suraj.jpg"><img src="./media/suraj.jpg"/></a>
-				<a href="./media/bag.jpg"><img src="./media/bag.jpg"/></a>
+				<a href="./media/bag.jpg"><img src="./media/suraj.jpg"/></a>
 				<a href="./media/suraj.jpg"><img src="./media/suraj.jpg"/></a>
-				<a href="./media/bag.jpg"><img src="./media/bag.jpg"/></a>
+				<a href="./media/bag.jpg"><img src="./media/suraj.jpg"/></a>
 				<a href="./media/suraj.jpg"><img src="./media/suraj.jpg"/></a>
 			</div>
 			<div id="content-archives" class='content-divs'></div>
@@ -137,23 +142,23 @@
 		<div id='planet-set'>
 			<div id="pragyan" class="planets planet-current">
 				<img src="./media/home/planets/pragyan.png"/>
-				<div class='planet-title'>Home</div>
+				<div class='planet-title title-font'><div class='extra'>Home</div></div>
 			</div>
 			<div id="archives" class="planets planet-neighbour">
 				<img src="./media/home/planets/archives.png"/>
-				<div class='planet-title'>Archives</div>
+				<div class='planet-title title-font'><div class='extra'>Archives</div></div>
 			</div>
 			<div id="contacts" class="planets planet-others">
 				<img src="./media/home/planets/contacts.png"/>
-				<div class='planet-title'>Contacts</div>
+				<div class='planet-title title-font'><div class='extra'>Contacts</div></div>
 			</div>
 			<div id="sponsors" class="planets planet-others">
 				<img src="./media/home/planets/sponsors.png"/>
-				<div class='planet-title'>Sponsors</div>
+				<div class='planet-title title-font'><div class='extra'>Sponsors</div></div>
 			</div>
 			<div id="gallery" class="planets planet-neighbour">
 				<img src="./media/home/planets/gallery.png"/>
-				<div class='planet-title'>Gallery</div>
+				<div class='planet-title title-font'><div class='extra'>Gallery</div></div>
 			</div>
 		</div>
 	  </div>	

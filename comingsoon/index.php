@@ -2,8 +2,12 @@
 <html>
 <head>
     <title>Coming-Soon</title>
-    <script src="./scripts/lib/jquery.min.js" type="text/javascript"></script>
+    <script src="../scripts/lib/jquery.min.js" type="text/javascript"></script>
     <style type="text/css">
+    @font-face{
+      font-family: Geosans;
+      src: url('../styles/fonts/Geosans.ttf');
+    }
     html,body{
             padding:0;
             margin: 0;
@@ -115,17 +119,31 @@
     top:40%;
     }
     #main-logo{
-    display: none;
     position: fixed;
     z-index: 2;
-    top: 35%;
-    left: 55%;
-    width: 25%;
-    margin-left: -12.5%;
+    top: 22%;
+    left: 50%;
+    width: 700px;
+    margin-left: -325px;
     text-align: center;
     }
+    #main-logo img{
+    display: none;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);    
+    }
     #cs-text{
+    display: none;
     color: white;
+    margin-top: -40px;
+    font-family: Geosans;
+    color: silver;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: underline;
     }
     #logo{
     -webkit-transition:all 1s ease-in-out;
@@ -149,26 +167,26 @@
 <body>
     <div id="texture"></div>
     <div id='main-logo'>
-        <img src='' />
+        <img src='../media/main-logo.png' />
         <div id='cs-text'>
             Coming Soon
         </div>
     </div>
     <div id="logo">
         <div class="logo-img" id="logo-one"><img src=
-        "./media/loading/1.png"></div>
+        "../media/loading/1.png"></div>
 
         <div class="logo-img" id="logo-two"><img src=
-        "./media/loading/2.png"></div>
+        "../media/loading/2.png"></div>
 
         <div class="logo-img" id="logo-three"><img src=
-        "./media/loading/3.png"></div>
+        "../media/loading/3.png"></div>
 
         <div class="logo-img" id="logo-four"><img src=
-        "./media/loading/4.png"></div>
+        "../media/loading/4.png"></div>
 
         <div class="logo-img" id="logo-five"><img src=
-        "./media/loading/5.png"></div>
+        "../media/loading/5.png"></div>
     </div><script type="text/javascript">
 !function($){
         var states={
@@ -199,7 +217,9 @@
                 clearInterval(timer);
                 $(states[i-1]).bind('transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function(){
                     $('#logo').addClass('resize');
-                    $('#main-logo').delay(1000).fadeIn(500);    
+                    $('#main-logo img').delay(1000).fadeIn(500, function(){
+                        $('#main-logo #cs-text').fadeIn(300);
+                    });    
                 });
             }
         },500);

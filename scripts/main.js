@@ -109,7 +109,7 @@
 			$('.content-divs').css({'display':'none'});
 			$('.avgrund-cover').css({'display':'block'});
 			$('#content-'+elem).css({'display':'block'});	
-			$('#content').animate({'top':'15%', 'opacity':1}, 400);
+			$('#content').animate({'top':'10%', 'opacity':1}, 400);
 			$('#planet-cover').animate({'opacity':1}, 400);
 		});
 		if(elem=="gallery"){
@@ -119,6 +119,9 @@
     				imageEvent: 'click',
 				});
 			$('#content-gallery').gallerie('open');
+		}
+		if(elem=='sponsors'){
+			console.log('Increase Size');
 		}
 	}
 
@@ -140,9 +143,9 @@
 		var aspectRatio = window.innerWidth/window.innerHeight;
 		var orbit={
 				h:50,
-				k:65,
+				k:55,
 				a:40,
-				b:-5
+				b:5
 			};
 
 		var planets=$('.planets').toArray(),
@@ -187,7 +190,7 @@
 				$('#'+this.id).removeClass('planet-current').addClass('planet-current-scale');
 				var shifted_orbit={
 					h:50,
-					k:60,
+					k:55,
 					a:70,
 					b:0
 				};
@@ -235,7 +238,7 @@
 		function closeModal(){
 			$('#footer').fadeIn('slow');
 			$('.avgrund-cover').css({'display':'none'});
-			$('#content').css({'top':'15%', 'opacity':0});
+			$('#content').css({'top':'10%', 'opacity':0});
 			$('#planet-cover').css({'opacity':0});
 			for(var i=0;i<planets.length;i++){
 				if($('#'+planets[i].id).hasClass('planet-current-scale')){
