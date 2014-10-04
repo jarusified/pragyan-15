@@ -23,11 +23,13 @@
     width: 100%;
     position: absolute;
     height: 100%;
-    background-image: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.25) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0.25)), -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.25) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0.25));
+    /*background-image: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.25) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0.25)), -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.25) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0.25));
     background-image: -webkit-linear-gradient(45deg, rgba(0, 0, 0, .25) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .25) 75%, rgba(0, 0, 0, .25)), -webkit-linear-gradient(45deg, rgba(0, 0, 0, .25) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .25) 75%, rgba(0, 0, 0, .25));
     background-position: 0 0pt, 4px 4px;
-    background-size: 8px 8px;
+    background-size: 8px 8px;*/
     background-color: #333333;
+    background: url('../media/dummy/back2.png');
+    background-size: 100% 105%;
     }
 
     #logo{
@@ -163,16 +165,39 @@
     margin-top: -75px;
     }
     .clock{
-        position: absolute;
-        top:70%;
-        left:25%;
-        margin-right: 25%;
-        height: 20%;
-        width: 80%;
-        display: block;
-        z-index: 10;
+    display: none;
+    position: absolute;
+    bottom: -2%;
+    left: 50%;
+    margin-left: -200px;
+    height: 20%;
+    width: 400px;
+    display: block;
+    z-index: 10;
     }
-
+    .flip-clock-label{
+        font-family: Geosans;
+        font-size: 15px;
+        color: silver !important;
+        font-weight: bolder;
+    }
+    .flip{
+        width: 50px !important;
+        height: 90px !important;
+    }
+    .flip-clock-wrapper ul li a div div.inn{
+        font-size: 40px !important;
+        background-color: #212429 !important;
+    }
+    .flip-clock-dot{
+        background-color: #212429 !important;        
+    }
+    .flip-clock-divider.minutes .flip-clock-label, .flip-clock-divider.seconds .flip-clock-label, .flip-clock-divider.hours .flip-clock-label{
+        right: -73px !important;
+    }
+    .flip-clock-wrapper ul li a div.up:after{
+        height: 0;
+    }
     </style>
 </head>
 
@@ -233,6 +258,7 @@
                     $('#logo').addClass('resize');
                     $('#main-logo img').delay(1000).fadeIn(500, function(){
                         $('#main-logo #cs-text').fadeIn(300);
+                        $('.clock').fadeIn(600);
                     });    
                 });
             }
@@ -242,7 +268,7 @@
             var clock;
 
             clock = $('.clock').FlipClock({
-                clockFace: 'DailyCounter',
+                clockFace: 'HourlyCounter',
                 autoStart: false,
 
             });
@@ -251,6 +277,7 @@
             clock.setTime((tomo.getTime()-Date.now())/1000 - 31*86400);
             clock.setCountdown(true);
             clock.start();
+            $('.clock').css({'display':'none'});
         }
         countdown();
 
