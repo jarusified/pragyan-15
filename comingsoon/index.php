@@ -2,7 +2,9 @@
 <html>
 <head>
     <title>Pragyan'15, Coming Soon</title>
+    <link rel="stylesheet" href="./flipclock.css">
     <script src="../scripts/lib/jquery.min.js" type="text/javascript"></script>
+    <script src="./flipclock.min.js"></script>
     <style type="text/css">
     @font-face{
       font-family: Geosans;
@@ -160,12 +162,23 @@
     transform: translateX(-150px) translateY(150px) scale(0.5);
     margin-top: -75px;
     }
+    .clock{
+        position: absolute;
+        top:70%;
+        left:25%;
+        margin-right: 25%;
+        height: 20%;
+        width: 80%;
+        display: block;
+        z-index: 10;
+    }
 
     </style>
 </head>
 
 <body>
     <div id="texture"></div>
+    <div class="clock"></div>
     <div id='main-logo'>
         <img src='../media/main-logo.png' />
         <div id='cs-text'>
@@ -187,7 +200,8 @@
 
         <div class="logo-img" id="logo-five"><img src=
         "../media/loading/5.png"></div>
-    </div><script type="text/javascript">
+    </div>
+    <script type="text/javascript">
 !function($){
         var states={
             1:$("#logo-one img"),
@@ -223,6 +237,22 @@
                 });
             }
         },500);
+
+        function countdown(){
+            var clock;
+
+            clock = $('.clock').FlipClock({
+                clockFace: 'DailyCounter',
+                autoStart: false,
+
+            });
+                    
+            var tomo = new Date(2014,10,05,20,00,00,00);
+            clock.setTime((tomo.getTime()-Date.now())/1000 - 31*86400);
+            clock.setCountdown(true);
+            clock.start();
+        }
+        countdown();
 
     }(window.jQuery);
     </script>
