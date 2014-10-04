@@ -141,13 +141,29 @@
     }
     #cs-text{
     display: none;
-    color: white;
     margin-top: -40px;
     font-family: Geosans;
+    color: #7e7e7e;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    }
+    .eta{
+    display: none;
+    position: fixed;
+    bottom: 27%;
+    left: 50%;
+    width: 80px;
+    height: 35px;
+    margin-left: -40px;
+    text-align: center;
+    font-family: Geosans;
     color: silver;
+    font-size: 35px;
     font-weight: bolder;
     text-transform: uppercase;
-    text-decoration: underline;
+    z-index: 1;        
     }
     #logo{
     -webkit-transition:all 1s ease-in-out;
@@ -193,7 +209,7 @@
         background-color: #212429 !important;        
     }
     .flip-clock-divider.minutes .flip-clock-label, .flip-clock-divider.seconds .flip-clock-label, .flip-clock-divider.hours .flip-clock-label{
-        right: -73px !important;
+        right: -80px !important;
     }
     .flip-clock-wrapper ul li a div.up:after{
         height: 0;
@@ -203,11 +219,12 @@
 
 <body>
     <div id="texture"></div>
+    <div class='eta'>E&nbsp;T&nbsp;A</div>
     <div class="clock"></div>
     <div id='main-logo'>
         <img src='../media/main-logo.png' />
         <div id='cs-text'>
-            Coming Soon
+            Let's Celebrate Technology
         </div>
     </div>
     <div id="logo">
@@ -258,6 +275,7 @@
                     $('#logo').addClass('resize');
                     $('#main-logo img').delay(1000).fadeIn(500, function(){
                         $('#main-logo #cs-text').fadeIn(300);
+                        $('.eta').fadeIn(300);
                         $('.clock').fadeIn(600);
                     });    
                 });
@@ -273,7 +291,7 @@
 
             });
                     
-            var tomo = new Date(2014,10,05,20,00,00,00);
+            var tomo = new Date(2014,10,05,21,00,00,00);
             clock.setTime((tomo.getTime()-Date.now())/1000 - 31*86400);
             clock.setCountdown(true);
             clock.start();
