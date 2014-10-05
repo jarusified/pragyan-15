@@ -21,6 +21,9 @@
 #loading-container{
   background: rgb(11,17,29);
 }
+#percent{
+  font-family: Phantom;
+}  
 #header{
   width: 100%;
   height: 15%;

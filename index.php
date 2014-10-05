@@ -497,10 +497,10 @@
                         "/14/sponsors/tnpl.PNG"></a>&nbsp;<a href=
                         "http://www.sbi.com" target=
                         "_blank">&nbsp;&nbsp;&nbsp;&nbsp;<img src=
-                        "State-Bank-Of-India.jpg" style=
+                        "/14/sponsors/State-Bank-Of-India.jpg" style=
                         "height: 113px; width: 170px;"></a>&nbsp;&nbsp;<a href=
                         "http://www.mastek.com/%E2%80%8E" target=
-                        "_blank"><img alt="" src="./mastek.jpg" style=
+                        "_blank"><img alt="" src="/14/sponsors/mastek.jpg" style=
                         "width: 192px; height: 127px;"></a></p>
 
                         <h2 style="text-align: center;">Online Shopping
@@ -795,7 +795,7 @@
                     &nbsp; &nbsp; &nbsp;&nbsp;</b><b>&nbsp;<a href=
                     "http://www.goldmansachs.com" target=
                     "_blank"><img alt="" src=
-                    "13/sponsors/GS.jpg">&nbsp;</a>&nbsp; &nbsp;
+                    "/13/sponsors/GS.jpg">&nbsp;</a>&nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
                     &nbsp; &nbsp; &nbsp;</b><b><a href=
@@ -922,7 +922,7 @@
                     "width: 140px; height: 140px;"></p>
 
                     <p style="text-align: center;">
-                    <span><span>Education
+                    <!--span><span>Education
                     Partners</span></span></p>
 
                     >
@@ -1101,7 +1101,7 @@
                     "width: 140px; height: 140px;"></a></b></span><a href="http://www.aquamatrix.in/"
                     target=
                     "_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt=""
-                    src="./Aqua-Matrix-Alumni-Partner-Silver.jpg"
+                    src="/13/sponsors/Aqua-Matrix-Alumni-Partner-Silver.jpg"
                     style="width: 140px; height: 140px;"></a></p>
 
                     <p style="text-align: center;"><span>Bronze
