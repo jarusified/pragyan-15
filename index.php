@@ -56,6 +56,12 @@
 	  	<img id='header-bg' src='./media/header.png' />
 	  </div>
 	  <div id='footer'>
+        <div id='social-links'>
+        <a id='fb' href='https://www.facebook.com/pragyan.nitt' target='_blank' style=""> </a>
+        <a id='twitter' href='https://twitter.com/nitt_pragyan' target='_blank' style=""> </a>
+        <a id='google' href='https://plus.google.com/+PragyanOrg_NITT' target='_blank' style=""> </a>
+        <a id='blog' href='http://www.pragyan.org/blog' target='_blank' style=""> </a>    
+        </div>
 	    <div id='footer-text'>Created By Delta Force. Designed By Julian.</div>
 	    <img src="./media/header.png" />
 	  </div>

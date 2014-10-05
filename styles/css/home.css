@@ -60,7 +60,6 @@
   height: auto;
   color: #60D8DF;
   position: fixed;
-  z-index: 2;
   font-family: Geosans;
   font-size: 14px;
   z-index: 2;
@@ -72,6 +71,52 @@
   left: -5%;
   position: fixed;
   opacity: 0.8;
+}
+#social-links{
+  width: 200px;
+  position: fixed;
+  left: 0;
+  z-index: 3;
+}
+#social-links a{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  float: left;
+  margin: 0 3px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 2px;
+  left: 5px;
+}
+#fb{
+  background: url('../../media/social/fb.png') 0 0;
+}
+#google{
+  background: url('../../media/social/google.png') 0 0;
+}
+#twitter{
+  background: url('../../media/social/twitter.png') 0 0;
+}
+#blog{
+  background: url('../../media/social/blog.png') 0 0;
+}
+#fb:hover{
+  background: url('../../media/social/fb.png') 0 0;
+  background-position: 30px;
+}
+#google:hover{
+  background: url('../../media/social/google.png') 0 0;
+  background-position: 30px;
+}
+#twitter:hover{
+  background: url('../../media/social/twitter.png') 0 0;
+  background-position: 30px;
+}
+#blog:hover{
+  background: url('../../media/social/blog.png') 0 0;
+  background-position: 30px;
 }
 #planet-set, #capsule{
   width: 100%;
