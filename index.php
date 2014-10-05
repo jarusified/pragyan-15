@@ -179,143 +179,24 @@
                             </div>
                         </div>
                     </div>
-                     <div class="person">
+                    <div class="person">
                         <div class='picture'><img src=
-                        "./media/contacts/4.prathamesh.png"></div>
+                        "./media/contacts/16.aravind.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">
-                                Prathamesh Amrutkar 
+                                Aravind Neelakantan
+
                             </div>
 
                             <div class="person-desig">
-                                Head, Sponsorships
+                                 Head, Media Relations
                             </div>
 
                             <div class="person-contact">
-                                prathamesh@pragyan.org<br>
+                                aravindn@pragyan.org<br>
                                 <span class="ph-number">+91
-                                72009 38751</span>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="person">
-                        <div class='picture'><img src=
-                        "./media/contacts/5.sriram.png"></div>
-
-                        <div class="text text-font">
-                            <div class="person-name">
-                                Sriram Sridharan
-                            </div>
-
-                            <div class="person-desig">
-                                Head, Industrial Collaborations
-                            </div>
-
-                            <div class="person-contact">
-                                sriram@pragyan.org<br>
-                                <span class="ph-number">+91
-                                 94878 94903</span>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="person">
-                        <div class='picture'><img src=
-                        "./media/contacts/6.siva.png"></div>
-
-                        <div class="text text-font">
-                            <div class="person-name">
-                                Sivaranjani Nadar 
-                            </div>
-
-                            <div class="person-desig">
-                                 Head, Events
-                            </div>
-
-                            <div class="person-contact">
-                                ranjani@pragyan.org<br>
-                                <span class="ph-number">+91
-                                96268 83116</span>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="person">
-                        <div class='picture'><img src=
-                        "./media/contacts/7.naren.png"></div>
-
-                        <div class="text text-font">
-                            <div class="person-name">
-                                Naren GSV
-                            </div>
-
-                            <div class="person-desig">
-                                 Head, Organising Committee
-                            </div>
-
-                            <div class="person-contact">
-                                naren@pragyan.org<br>
-                                <span class="ph-number">+91
-                                98947 78568</span>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="person">
-                        <div class='picture'><img src=
-                        "./media/contacts/8.kram.png"></div>
-
-                        <div class="text text-font">
-                            <div class="person-name">
-                                Karthik Ram
-                            </div>
-
-                            <div class="person-desig">
-                                Head, Institute Collaborations
-                            </div>
-
-                            <div class="person-contact">
-                                karthik@pragyan.org<br>
-                                <span class="ph-number">+91
-                                 94447 17154</span>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="person">
-                        <div class='picture'><img src=
-                        "./media/contacts/9.ruban.png"></div>
-
-                        <div class="text text-font">
-                            <div class="person-name">
-                                Rubanraj
-                            </div>
-
-                            <div class="person-desig">
-                                Head, Publicity
-                            </div>
-
-                            <div class="person-contact">
-                                ruban@pragyan.org<br>
-                                <span class="ph-number">+91
-                                95003 69604</span>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="person">
-                        <div class='picture'><img src=
-                        "./media/contacts/10.neethi.png"></div>
-
-                        <div class="text text-font">
-                            <div class="person-name">
-                                Neethi Sarah John
-                            </div>
-
-                            <div class="person-desig">
-                                Head, Quality Assurance
-                            </div>
-
-                            <div class="person-contact">
-                                neethi@pragyan.org<br>
-                                <span class="ph-number">+91
-                                88709 38524</span>
+                                97910 87893</span>
                             </div>
                         </div>
                     </div>
@@ -341,26 +222,6 @@
                     </div>
                      <div class="person">
                         <div class='picture'><img src=
-                        "./media/contacts/12.yaazhini.png"></div>
-
-                        <div class="text text-font">
-                            <div class="person-name">
-                                 Yaazhini
-                            </div>
-
-                            <div class="person-desig">
-                                Head, Public Relations
-                            </div>
-
-                            <div class="person-contact">
-                                yaazhini@pragyan.org<br>
-                                <span class="ph-number">+91
-                                90427 08201</span>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="person">
-                        <div class='picture'><img src=
                         "./media/contacts/13.julian.png"></div>
 
                         <div class="text text-font">
@@ -376,6 +237,66 @@
                                 julian@pragyan.org<br>
                                 <span class="ph-number">+91
                                  99528 07586</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="person">
+                        <div class='picture'><img src=
+                        "./media/contacts/8.kram.png"></div>
+
+                        <div class="text text-font">
+                            <div class="person-name">
+                                Karthik Ram
+                            </div>
+
+                            <div class="person-desig">
+                                Head, Institute Collaborations
+                            </div>
+
+                            <div class="person-contact">
+                                karthik@pragyan.org<br>
+                                <span class="ph-number">+91
+                                 94447 17154</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="person">
+                        <div class='picture'><img src=
+                        "./media/contacts/7.naren.png"></div>
+
+                        <div class="text text-font">
+                            <div class="person-name">
+                                Naren GSV
+                            </div>
+
+                            <div class="person-desig">
+                                 Head, Organising Committee
+                            </div>
+
+                            <div class="person-contact">
+                                naren@pragyan.org<br>
+                                <span class="ph-number">+91
+                                98947 78568</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="person">
+                        <div class='picture'><img src=
+                        "./media/contacts/10.neethi.png"></div>
+
+                        <div class="text text-font">
+                            <div class="person-name">
+                                Neethi Sarah John
+                            </div>
+
+                            <div class="person-desig">
+                                Head, Quality Assurance
+                            </div>
+
+                            <div class="person-contact">
+                                neethi@pragyan.org<br>
+                                <span class="ph-number">+91
+                                88709 38524</span>
                             </div>
                         </div>
                     </div>
@@ -401,6 +322,86 @@
                     </div>
                      <div class="person">
                         <div class='picture'><img src=
+                        "./media/contacts/4.prathamesh.png"></div>
+
+                        <div class="text text-font">
+                            <div class="person-name">
+                                Prathamesh Amrutkar 
+                            </div>
+
+                            <div class="person-desig">
+                                Head, Sponsorships
+                            </div>
+
+                            <div class="person-contact">
+                                prathamesh@pragyan.org<br>
+                                <span class="ph-number">+91
+                                72009 38751</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="person">
+                        <div class='picture'><img src=
+                        "./media/contacts/9.ruban.png"></div>
+
+                        <div class="text text-font">
+                            <div class="person-name">
+                                Rubanraj
+                            </div>
+
+                            <div class="person-desig">
+                                Head, Publicity
+                            </div>
+
+                            <div class="person-contact">
+                                ruban@pragyan.org<br>
+                                <span class="ph-number">+91
+                                95003 69604</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="person">
+                        <div class='picture'><img src=
+                        "./media/contacts/6.siva.png"></div>
+
+                        <div class="text text-font">
+                            <div class="person-name">
+                                Sivaranjani Nadar 
+                            </div>
+
+                            <div class="person-desig">
+                                 Head, Events
+                            </div>
+
+                            <div class="person-contact">
+                                ranjani@pragyan.org<br>
+                                <span class="ph-number">+91
+                                96268 83116</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="person">
+                        <div class='picture'><img src=
+                        "./media/contacts/5.sriram.png"></div>
+
+                        <div class="text text-font">
+                            <div class="person-name">
+                                Sriram Sridharan
+                            </div>
+
+                            <div class="person-desig">
+                                Head, Industrial Collaborations
+                            </div>
+
+                            <div class="person-contact">
+                                sriram@pragyan.org<br>
+                                <span class="ph-number">+91
+                                 94878 94903</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div class='picture'><img src=
                         "./media/contacts/15.vishnu.png"></div>
 
                         <div class="text text-font">
@@ -419,24 +420,23 @@
                             </div>
                         </div>
                     </div>
-                     <div class="person">
+                    <div class="person">
                         <div class='picture'><img src=
-                        "./media/contacts/16.aravind.png"></div>
+                        "./media/contacts/12.yaazhini.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">
-                                Aravind Neelakantan
-
+                                 Yaazhini
                             </div>
 
                             <div class="person-desig">
-                                 Head, Media Relations
+                                Head, Public Relations
                             </div>
 
                             <div class="person-contact">
-                                aravindn@pragyan.org<br>
+                                yaazhini@pragyan.org<br>
                                 <span class="ph-number">+91
-                                97910 87893</span>
+                                90427 08201</span>
                             </div>
                         </div>
                     </div>
