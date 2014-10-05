@@ -1,3 +1,9 @@
+::selection {
+  background: #60D8DF; 
+}
+::-moz-selection {
+  background: #60D8DF; 
+}
 #main{
   width: 100%;
   position: absolute;
@@ -578,6 +584,19 @@
   outline: 1px solid slategrey;
 }
 
+.vertical-scrollable::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+.vertical-scrollable::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.vertical-scrollable::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
 /* Contacts */
 #content-contacts{
   position: absolute;
@@ -681,6 +700,7 @@
 }
 
 
+
 /* Clock */
 .clock{
   position: absolute !important;
@@ -757,6 +777,24 @@
     height: auto !important; 
   }
 }
+
+/*Home content*/
+#content-pragyan{
+  height: 100%;
+  font-family: Geosans;
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+}
+#home-content{
+  width: 74%;
+  margin-left: 13%;
+  margin-top: 30px;
+  color: #ccc;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: justify;
+}
+
 /*sponsors css */
 #content-sponsors{
   height: 100%;
@@ -766,16 +804,35 @@
   color:#60D8DF;
 
 }
-#sposors-tab{
-  position: absolute;
-  top:0%;
-  height: 5%;
-  width:10%;
+.sponsors-tab{
+  position: fixed;
+  width: 100px;
+  top:10%;
+  margin: 10px;
+  z-index: 5;
 }
-#sponsors-tab button{
+.sponsors-tab button{
   float:left;
-  color:#60D8DF;
+  width: 100px;
+  height: 30px;
+  position: relative;
+  margin-bottom: 10px;
+  color: #60D8DF;
   background-color: black;
+  border: 1px solid rgb(94, 94, 94);
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+.sponsors-tab button:hover{
+  background: #60D8DF;
+  color: black;
+  border-color: black;
+  -webkit-box-shadow: 0 2px 1px -1px rgb(151, 148, 148);
+  -moz-box-shadow: 0 2px 1px -1px rgb(151, 148, 148);
+  -o-box-shadow: 0 2px 1px -1px rgb(151, 148, 148);
+  -ms-box-shadow: 0 2px 1px -1px rgb(151, 148, 148);
+  box-shadow: 0 2px 1px -1px rgb(151, 148, 148);
 }
 #sponsors-2013 p{
   font-family: Geosans;

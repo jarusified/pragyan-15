@@ -131,11 +131,15 @@
 			console.log('Increase Size');
 			$('#button-2013').click(function(){
                 $('#sponsors-2014').css('display','none');
+                $('#button-2014').css({'color': '#60D8DF', 'background-color': 'black','border-color':'rgb(94, 94, 94)'});
+                $('#button-2013').css({'background': '#60D8DF','color': 'black','border-color': 'black'});
                 $('#sponsors-2013').hide().fadeIn('slow');
             });
 
             $('#button-2014').click(function(){
                 $('#sponsors-2013').css('display','none');
+                $('#button-2013').css({'color': '#60D8DF', 'background-color': 'black','border-color':'rgb(94, 94, 94)'});
+                $('#button-2014').css({'background': '#60D8DF','color': 'black','border-color': 'black'});
                 $('#sponsors-2014').hide().fadeIn('slow');
             });
 		}

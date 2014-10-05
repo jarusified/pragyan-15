@@ -62,6 +62,15 @@
 	  <div class="avgrund-cover">
 	  	<div id='content'>
 			<div class="content-close">&#120;</div>
+            <div id='content-pragyan' class='content-divs vertical-scrollable'>
+                <div id='home-content'>
+                <h2 style='color:#60D8DF; text-align: center; font-family: Phantom; text-transform: lowercase'>Pragyan Is Back</h2>
+                <p>Pragyan, the international techno-managerial festival of NIT Trichy, having completed a major milestone of 10 successful years in the previous edition, continues to grow and expand exponentially in the years to come. Born in 2005 as a platform for students to show off their creativity and technical skills, it has reached extraordinary heights and has attained the ISO 20121:2012 certification for sustainable event management; a certification previously attained by organizations such as the Olympics and the Old Trafford Stadium.</p>
+                <p>The 4 day festival consists of a myriad of events where skills are tested to their limits; workshops which provide a common learning ground for students; guest lectures where eminent speakers continue to inspire; crossfire where heated discussion amongst distinguished leaders is witnessed; Sangam and exhibitions where students can show off their technical knowledge; and infotainment where learning is combined with fun.</p>
+                <p>With every edition, Pragyan has broken barriers and has reached incredible milestones. Original thought and proactive behavior has brought this organization to this prodigious level. Pragyan 2015 will undeniably witness further prominence and the setting of greater trends than ever before.</p>
+                <p> Cheers, <br/> Team Pragyan </p>
+                </div>
+            </div>
 			<div id="content-contacts" class='content-divs scrollable'>
 			    <div class="scroll">
                     <div class="person">
@@ -81,11 +90,10 @@
                                 <br>
                                 ajay@pragyan.org<br>
                                 <span class="ph-number">+91
-                                998877668877</span>
+                                96001 11459</span>
                             </div>
                         </div>
                     </div>
-
                     <div class="person">
                         <div class='picture'><img src=
                         "./media/contacts/2.gm.png"></div>
@@ -103,12 +111,11 @@
                                 <br>
                                 gm@pragyan.org<br>
                                 <span class="ph-number">+91
-                                998877668877</span>
+                                98945 01984</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="person">
+                     <div class="person">
                         <div class='picture'><img src=
                         "./media/contacts/3.sarath.png"></div>
 
@@ -118,95 +125,102 @@
                             </div>
 
                             <div class="person-desig">
-                                Treasurer
+                                 Treasurer
                             </div>
 
                             <div class="person-contact">
                                 <br>
                                 sarath@pragyan.org<br>
                                 <span class="ph-number">+91
-                                998877668877</span>
+                                87608 94418</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="person">
+                     <div class="person">
                         <div class='picture'><img src=
                         "./media/contacts/4.prathamesh.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">
-                                Prathamesh
+                                Prathamesh Amrutkar 
                             </div>
 
                             <div class="person-desig">
-                                askn alkn la a
+                                Head, Sponsorships
                             </div>
 
                             <div class="person-contact">
-                                asknka al ankn an
+                                <br>
+                                prathamesh@pragyan.org<br>
+                                <span class="ph-number">+91
+                                72009 38751</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="person">
+                     <div class="person">
                         <div class='picture'><img src=
                         "./media/contacts/5.sriram.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">
-                                Sriram
+                                Sriram Sridharan
                             </div>
 
                             <div class="person-desig">
-                                askn alkn la a
+                                Head, Industrial Collaborations
                             </div>
 
                             <div class="person-contact">
-                                asknka al ankn an
+                                <br>
+                                sriram@pragyan.org<br>
+                                <span class="ph-number">+91
+                                 94878 94903</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="person">
+                     <div class="person">
                         <div class='picture'><img src=
                         "./media/contacts/6.siva.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">
-                                Sivaranjani
+                                Sivaranjani Nadar 
                             </div>
 
                             <div class="person-desig">
-                                askn alkn la a
+                                 Head, Events
                             </div>
 
                             <div class="person-contact">
-                                asknka al ankn an
+                                <br>
+                                ranjani@pragyan.org<br>
+                                <span class="ph-number">+91
+                                96268 83116</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="person">
+                     <div class="person">
                         <div class='picture'><img src=
                         "./media/contacts/7.naren.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">
-                                Naren
+                                Naren GSV
                             </div>
 
                             <div class="person-desig">
-                                askn alkn la a
+                                 Head, Organising committee
                             </div>
 
                             <div class="person-contact">
-                                asknka al ankn an
+                                <br>
+                                naren@pragyan.org<br>
+                                <span class="ph-number">+91
+                                98947 78568</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="person">
+                     <div class="person">
                         <div class='picture'><img src=
                         "./media/contacts/8.kram.png"></div>
 
@@ -216,54 +230,60 @@
                             </div>
 
                             <div class="person-desig">
-                                askn alkn la a
+                                Head, Institute Collaborations
                             </div>
 
                             <div class="person-contact">
-                                asknka al ankn an
+                                <br>
+                                karthik@pragyan.org<br>
+                                <span class="ph-number">+91
+                                 94447 17154</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="person">
+                     <div class="person">
                         <div class='picture'><img src=
                         "./media/contacts/9.ruban.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">
-                                Ruban
+                                Rubanraj
                             </div>
 
                             <div class="person-desig">
-                                askn alkn la a
+                                Head, Publicity
                             </div>
 
                             <div class="person-contact">
-                                asknka al ankn an
+                                <br>
+                                ruban@pragyan.org<br>
+                                <span class="ph-number">+91
+                                95003 69604</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="person">
+                     <div class="person">
                         <div class='picture'><img src=
                         "./media/contacts/10.neethi.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">
-                                Neethi
+                                Neethi Sarah John
                             </div>
 
                             <div class="person-desig">
-                                askn alkn la a
+                                Head, Quality Assurance
                             </div>
 
                             <div class="person-contact">
-                                asknka al ankn an
+                                <br>
+                                neethi@pragyan.org<br>
+                                <span class="ph-number">+91
+                                88709 38524</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="person">
+                     <div class="person">
                         <div class='picture'><img src=
                         "./media/contacts/11.dhuwaara.png"></div>
 
@@ -273,106 +293,120 @@
                             </div>
 
                             <div class="person-desig">
-                                askn alkn la a
+                                Head, Hospitality
                             </div>
 
                             <div class="person-contact">
-                                asknka al ankn an
+                                <br>
+                                dhuwaara@pragyan.org<br>
+                                <span class="ph-number">+91
+                                76671 27662</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="person">
+                     <div class="person">
                         <div class='picture'><img src=
                         "./media/contacts/12.yaazhini.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">
-                                Yaazhini
+                                 Yaazhini
                             </div>
 
                             <div class="person-desig">
-                                askn alkn la a
+                                Head, Public Relations
                             </div>
 
                             <div class="person-contact">
-                                asknka al ankn an
+                                <br>
+                                yaazhini@pragyan.org<br>
+                                <span class="ph-number">+91
+                                90427 08201</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="person">
+                     <div class="person">
                         <div class='picture'><img src=
                         "./media/contacts/13.julian.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">
-                                Julian
+                                Julian Arnold
                             </div>
 
                             <div class="person-desig">
-                                askn alkn la a
+                                Head, Design
                             </div>
 
                             <div class="person-contact">
-                                asknka al ankn an
+                                <br>
+                                julian@pragyan.org<br>
+                                <span class="ph-number">+91
+                                 99528 07586</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="person">
+                     <div class="person">
                         <div class='picture'><img src=
                         "./media/contacts/14.prasanna.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">
-                                Prasanna
+                                 Prasanna
                             </div>
 
                             <div class="person-desig">
-                                askn alkn la a
+                                 Head, Computer Support Group 
                             </div>
 
                             <div class="person-contact">
-                                asknka al ankn an
+                                <br>
+                                prasanna@pragyan.org<br>
+                                <span class="ph-number">+91
+                                99408 69384</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="person">
+                     <div class="person">
                         <div class='picture'><img src=
                         "./media/contacts/15.vishnu.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">
-                                Vishnu
+                                Vishnu KG
                             </div>
 
                             <div class="person-desig">
-                                askn alkn la a
+                                Head, Pragyan Social Responsibility
                             </div>
 
                             <div class="person-contact">
-                                asknka al ankn an
+                                <br>
+                                vishnu@pragyan.org<br>
+                                <span class="ph-number">+91
+                                94883 65452</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="person">
+                     <div class="person">
                         <div class='picture'><img src=
                         "./media/contacts/16.aravind.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">
-                                Aravind
+                                Aravind Neelakantan
+
                             </div>
 
                             <div class="person-desig">
-                                askn alkn la a
+                                 Head, Media Relations
                             </div>
 
                             <div class="person-contact">
-                                asknka al ankn an
+                                <br>
+                                aravindn@pragyan.org<br>
+                                <span class="ph-number">+91
+                                97910 87893</span>
                             </div>
                         </div>
                     </div>
@@ -391,10 +425,10 @@
 				<a href="./media/gallery/10.jpg"><img src="./media/gallery/10.jpg"/></a>
 			</div>
 			<div id="content-archives" class='content-divs'></div>
-			<div id="content-sponsors" class='content-divs scrollable'>
+			<div id="content-sponsors" class='content-divs vertical-scrollable'>
                 <div class="sponsors-tab">
+                    <button id="button-2014" style='background: #60D8DF;color: black;border-color: black;'>2014</button>
                     <button id="button-2013">2013</button> 
-                    <button id="button-2014">2014</button>
                 </div>
                     <div id="sponsors-2014">
                         <h2 style="text-align: center;">Title Sponsor</h2>
@@ -1135,22 +1169,22 @@
 				<img src="./media/home/planets/pragyan.png"/>
 				<div class='planet-title title-font'><div class='extra'>Home</div></div>
 			</div>
-			<div id="archives" class="planets planet-neighbour">
-				<img src="./media/home/planets/archives.png"/>
-				<div class='planet-title title-font'><div class='extra'>Archives</div></div>
-			</div>
-			<div id="contacts" class="planets planet-others">
+			<div id="contacts" class="planets planet-neighbour">
 				<img src="./media/home/planets/contacts.png"/>
 				<div class='planet-title title-font'><div class='extra'>Contacts</div></div>
 			</div>
-			<div id="sponsors" class="planets planet-others">
-				<img src="./media/home/planets/sponsors.png"/>
-				<div class='planet-title title-font'><div class='extra'>Sponsors</div></div>
-			</div>
-			<div id="gallery" class="planets planet-neighbour">
+            <div id="archives" class="planets planet-others">
+                <img src="./media/home/planets/archives.png"/>
+                <div class='planet-title title-font'><div class='extra'>Archives</div></div>
+            </div>
+			<div id="gallery" class="planets planet-others">
 				<img src="./media/home/planets/gallery.png"/>
 				<div class='planet-title title-font'><div class='extra'>Gallery</div></div>
 			</div>
+            <div id="sponsors" class="planets planet-neighbour">
+                <img src="./media/home/planets/sponsors.png"/>
+                <div class='planet-title title-font'><div class='extra'>Sponsors</div></div>
+            </div>
 		</div>
 	  </div>	
 	</div>
