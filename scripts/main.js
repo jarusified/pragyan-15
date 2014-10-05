@@ -8,8 +8,8 @@
     	
  	//add images here
  	var images=["home/planets/archives.png","home/planets/sponsors.png","home/planets/contacts.png",
- 	"home/planets/gallery.png","home/planets/pragyan.png","home/planets/stars1.png","header.png",
- 	"full-logo.png", "contacts/1.ajay.png", "contacts/2.gm.png", "contacts/3.sarath.png", "contacts/4.prathamesh.png", 
+ 	"home/planets/gallery.png","home/planets/pragyan.png", "header.png",
+ 	"contacts/1.ajay.png", "contacts/2.gm.png", "contacts/3.sarath.png", "contacts/4.prathamesh.png", 
  	"contacts/5.sriram.png", "contacts/6.siva.png", "contacts/7.naren.png", "contacts/8.kram.png", "contacts/9.ruban.png",
  	"contacts/10.neethi.png", "contacts/11.dhuwaara.png", "contacts/12.yaazhini.png",  "contacts/13.julian.png",
  	"contacts/14.prasanna.png",  "contacts/15.vishnu.png",  "contacts/16.aravind.png"];

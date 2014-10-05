@@ -91,31 +91,31 @@
   left: 5px;
 }
 #fb{
-  background: url('../../media/social/fb.png') 0 0;
+  background: url('../../media/social/fb1.png') 0 0;
 }
 #google{
-  background: url('../../media/social/google.png') 0 0;
+  background: url('../../media/social/google1.png') 0 0;
 }
 #twitter{
-  background: url('../../media/social/twitter.png') 0 0;
+  background: url('../../media/social/twitter1.png') 0 0;
 }
 #blog{
-  background: url('../../media/social/blog.png') 0 0;
+  background: url('../../media/social/blog1.png') 0 0;
 }
 #fb:hover{
-  background: url('../../media/social/fb.png') 0 0;
+  background: url('../../media/social/fb1.png') 0 0;
   background-position: 30px;
 }
 #google:hover{
-  background: url('../../media/social/google.png') 0 0;
+  background: url('../../media/social/google1.png') 0 0;
   background-position: 30px;
 }
 #twitter:hover{
-  background: url('../../media/social/twitter.png') 0 0;
+  background: url('../../media/social/twitter1.png') 0 0;
   background-position: 30px;
 }
 #blog:hover{
-  background: url('../../media/social/blog.png') 0 0;
+  background: url('../../media/social/blog1.png') 0 0;
   background-position: 30px;
 }
 #planet-set, #capsule{
