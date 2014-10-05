@@ -708,9 +708,7 @@
                     "/13/sponsors/Titlesponsor.jpg" style=
                     "width: 420px; height: 280px;"></a></span></p>
 
-                    <p style="text-align: center;">
-                    <span>&nbsp;</span></p>
-
+                 
                     <p style="text-align: center;">
                     <span>&nbsp;</span></p>
 
@@ -729,7 +727,6 @@
                     <p style="text-align: center;">
                     <span>&nbsp;</span></p>
 
-                    <p style="text-align: center;">&nbsp;</p>
 
                     <p style="text-align: center;"><span>Security
                     Partner</span></p>
@@ -744,8 +741,6 @@
                     <p style="text-align: center;"><span>Major
                     Sponsor</span></p>
 
-                    <p style="text-align: center;">
-                    <span>&nbsp;</span></p>
 
                     <p style="text-align: center;"><span><a href=
                     "http://www.wishberry.in/" target=
@@ -777,12 +772,6 @@
                     style=
                     "width: 140px; height: 140px;"></a></b></span></p>
 
-                    <div>
-                        <span>&nbsp;</span>
-                    </div>
-
-                    <p style="text-align: center;">
-                    <span>&nbsp;</span></p>
 
                     <p style="text-align: center;">&nbsp;</p>
 
@@ -903,8 +892,7 @@
                     <span><span>Education
                     Partners</span></span></p>
 
-                    <p style="text-align: center;">
-                    <span>&nbsp;</span></p>
+                    >
 
                     <p style="text-align: center;">
                     <span><b><a href="http://www.studyinholland.nl/"
@@ -1020,7 +1008,6 @@
                     <p style="text-align: center;">
                     <span>&nbsp;</span></p>
 
-                    <p style="text-align: center;">&nbsp;</p>
 
                     <p style="text-align: center;"><span>PSR
                     Partners</span></p>
@@ -1031,14 +1018,10 @@
                     "/13/sponsors/Reynolds--PSR-Partner.jpg"
                     style="width: 140px; height: 140px;"></a><span>&nbsp;</span></p>
 
-                    <p style="text-align: center;">
-                    <span>&nbsp;</span></p>
 
                     <p style="text-align: center;"><span>Gold
                     Partners</span></p>
 
-                    <p style="text-align: center;">
-                    <span>&nbsp;</span></p>
 
                     <p style="text-align: center;">
                     <span><b><a href="http://www.logicinfo.com/"
@@ -1068,8 +1051,6 @@
                     <p style="text-align: center;"><span>Silver
                     Partners</span></p>
 
-                    <p style="text-align: center;">
-                    <span>&nbsp;</span></p>
 
                     <p style="text-align: center;">
                     <span><b><a href="http://netcon.in/" target=
@@ -1093,8 +1074,6 @@
                     <p style="text-align: center;"><span>Bronze
                     Partners</span></p>
 
-                    <p style="text-align: center;">
-                    <span>&nbsp;</span></p>
 
                     <p style="text-align: center;"><span><b style=
                     "line-height: 16px;"><a href=
@@ -1114,29 +1093,10 @@
                     style=
                     "width: 140px; height: 140px;"></a></b></span></p>
 
-                    <p style="text-align: center;">
-                    <span>&nbsp;</span></p><br>
 
-                    <p style="margin-bottom: 0in;">&nbsp;</p>
-
-                    <p style="text-align: center;">
-                    <span>&nbsp;</span></p><br>
 
                     <p style="text-align: center;"><span>Media
                     Partners</span></p>
-
-                    <p style="text-align: center;"><span><b style=
-                    "font-weight: bold">&nbsp;
-                    &nbsp;&nbsp;</b><b>&nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp;&nbsp;</b><b style=
-                    "font-weight: bold"><b style=
-                    "font-weight: bold">&nbsp; &nbsp;
-                    &nbsp;&nbsp;</b><b>&nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp;&nbsp;</b></b></span></p>
 
                     <div>
                         <p style="text-align: center;">
