@@ -55,6 +55,34 @@
 	  	<img id='full-logo' src='./media/full-logo.png' />
 	  	<img id='header-bg' src='./media/header.png' />
 	  </div>
+      <div id="capsule">    
+        <div id="bg-img">
+            <div class="stars"></div>
+            <div class="twinkling"></div>
+        </div>
+        <div id='planet-set'>
+            <div id="pragyan" class="planets planet-current">
+                <img src="./media/home/planets/pragyan.png"/>
+                <div class='planet-title title-font'><div class='extra'>Home</div></div>
+            </div>
+            <div id="contacts" class="planets planet-neighbour">
+                <img src="./media/home/planets/contacts.png"/>
+                <div class='planet-title title-font'><div class='extra'>Contacts</div></div>
+            </div>
+            <div id="archives" class="planets planet-others">
+                <img src="./media/home/planets/archives.png"/>
+                <div class='planet-title title-font'><div class='extra'>Archives</div></div>
+            </div>
+            <div id="gallery" class="planets planet-others">
+                <img src="./media/home/planets/gallery.png"/>
+                <div class='planet-title title-font'><div class='extra'>Gallery</div></div>
+            </div>
+            <div id="sponsors" class="planets planet-neighbour">
+                <img src="./media/home/planets/sponsors.png"/>
+                <div class='planet-title title-font'><div class='extra'>Sponsors</div></div>
+            </div>
+        </div>
+      </div>
 	  <div id='footer'>
         <div id='social-links'>
         <a id='fb' href='https://www.facebook.com/pragyan.nitt' target='_blank' style=""> </a>
@@ -65,6 +93,7 @@
 	    <div id='footer-text'>Created By Delta Force. Designed By Julian.</div>
 	    <img src="./media/header.png" />
 	  </div>
+      <script type="text/javascript" src='./scripts/main.js'></script>
 	  <div class="avgrund-cover">
 	  	<div id='content'>
 			<div class="content-close">&#120;</div>
@@ -1122,45 +1151,14 @@
                     </div>
                 </div>
 
-
-
             </div>	
 		</div>
 		<div id='planet-cover'>
-		</div>
-	  </div>
-	  <div id="capsule">	
-		<div id="bg-img">
-			<div class="stars"></div>
-    		<div class="twinkling"></div>
-		</div>
-		<div id='planet-set'>
-			<div id="pragyan" class="planets planet-current">
-				<img src="./media/home/planets/pragyan.png"/>
-				<div class='planet-title title-font'><div class='extra'>Home</div></div>
-			</div>
-			<div id="contacts" class="planets planet-neighbour">
-				<img src="./media/home/planets/contacts.png"/>
-				<div class='planet-title title-font'><div class='extra'>Contacts</div></div>
-			</div>
-            <div id="archives" class="planets planet-others">
-                <img src="./media/home/planets/archives.png"/>
-                <div class='planet-title title-font'><div class='extra'>Archives</div></div>
-            </div>
-			<div id="gallery" class="planets planet-others">
-				<img src="./media/home/planets/gallery.png"/>
-				<div class='planet-title title-font'><div class='extra'>Gallery</div></div>
-			</div>
-            <div id="sponsors" class="planets planet-neighbour">
-                <img src="./media/home/planets/sponsors.png"/>
-                <div class='planet-title title-font'><div class='extra'>Sponsors</div></div>
-            </div>
 		</div>
 	  </div>	
 	</div>
 	
 
 </body>
-	<script type="text/javascript" src='./scripts/main.js'></script>
 
 </html>
