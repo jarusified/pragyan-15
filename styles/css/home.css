@@ -930,8 +930,9 @@
   -ms-box-shadow: 0 2px 1px -1px rgb(151, 148, 148);
   box-shadow: 0 2px 1px -1px rgb(151, 148, 148);
 }
-#sponsors-2013 p{
+#sponsors-2013 p, #sponsors-2014 p{
   font-family: Geosans;
   color:#60D8DF;
   font-size: 1.5em;
+  font-weight: bold;
 }

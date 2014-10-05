@@ -559,7 +559,7 @@
                         "/14/sponsors/toshiba.jpg" style=
                         "height: 50px; width: 161px;"></a></p>
 
-                        <!--h2 style="text-align: center;">Pragyan Young Mind
+                        <h2 style="text-align: center;">Pragyan Young Mind
                         Partners</h2>
 
                         <p style="text-align: center;"><a href="#" target=
@@ -667,7 +667,7 @@
                         "/14/sponsors/altus%20logo.png" style=
                         "height: 102px; width: 120px;"></a></p>
 
-                        <!--h2 style="text-align: center;">Thrill Partners</h2>
+                        <h2 style="text-align: center;">Thrill Partners</h2>
 
                         <p style="text-align: center;"><a href=
                         "http://www.harley-davidson.in/" target=
@@ -742,7 +742,7 @@
                 </div>
 
 
-                <div class="text-font" id="sponsors-2013">
+                <div class="text-font" id="sponsors-2013" style='display: none'>
                     <p style="text-align: center;"><span>Title
                     Sponsor</span></p>
 
@@ -933,7 +933,7 @@
                     "width: 140px; height: 140px;"></p>
 
                     <p style="text-align: center;">
-                    <!--span><span>Education
+                    <span><span>Education
                     Partners</span></span></p>
 
                     >
@@ -1010,7 +1010,7 @@
                     style=
                     "width: 140px; height: 140px;"></span></p>
 
-                    <!--p style="text-align: center;"><span>Other
+                    <p style="text-align: center;"><span>Other
                     Sponsors</span></p>
 
                     <p style="text-align: center;">
