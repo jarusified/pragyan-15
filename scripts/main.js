@@ -129,6 +129,15 @@
 		}
 		if(elem=='sponsors'){
 			console.log('Increase Size');
+			$('#button-2013').click(function(){
+                $('#sponsors-2014').css('display','none');
+                $('#sponsors-2013').hide().fadeIn('slow');
+            });
+
+            $('#button-2014').click(function(){
+                $('#sponsors-2013').css('display','none');
+                $('#sponsors-2014').hide().fadeIn('slow');
+            });
 		}
 	}
 
