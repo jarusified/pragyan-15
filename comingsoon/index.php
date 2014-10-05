@@ -301,10 +301,17 @@
 
             });
                     
-            var tomo = new Date(2014,10,05,21,00,00,00);
-            clock.setTime((tomo.getTime()-Date.now())/1000 - 31*86400);
-            clock.setCountdown(true);
-            clock.start();
+            var tomo = new Date(2014,10,05,20,00,00,00);
+            var seconds=(tomo.getTime()-Date.now())/1000 -31*86400;
+            if(seconds>0){
+                clock.setTime(seconds);
+                clock.setCountdown(true);
+                clock.start();
+            }
+            else{
+                clock.setTime(0);
+                clock.setCountdown(false);
+            }
             $('.clock').css({'display':'none'});
         }
         countdown();
