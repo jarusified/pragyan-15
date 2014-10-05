@@ -656,7 +656,7 @@
                         "/14/sponsors/altus%20logo.png" style=
                         "height: 102px; width: 120px;"></a></p>
 
-                        <h2 style="text-align: center;">Thrill Partners</h2>
+                        <!--h2 style="text-align: center;">Thrill Partners</h2>
 
                         <p style="text-align: center;"><a href=
                         "http://www.harley-davidson.in/" target=
@@ -727,7 +727,7 @@
 
                         <h2 style="text-align: center;">&nbsp;</h2>
 
-                        <h2 style="text-align: center;">&nbsp;</h2>
+                        <h2 style="text-align: center;">&nbsp;</h2-->
                 </div>
 
 
