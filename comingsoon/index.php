@@ -306,7 +306,7 @@
 
             });
                     
-            var tomo = new Date(2014,10,05,14,32,30,00);
+            var tomo = new Date(2014,10,05,21,00,00,00);
             var seconds=Math.floor((tomo.getTime()-Date.now())/1000 -31*86400);
             if(seconds>0){
                 clock.setTime(5);
