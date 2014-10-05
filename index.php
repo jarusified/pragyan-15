@@ -11,6 +11,16 @@
 	<link rel="stylesheet" type="text/css" href="./styles/css/lib/gallerie.css"/>
 	<link rel="stylesheet" type="text/css" href="./styles/css/lib/gallerie-effects.css"/>
 	<link rel="stylesheet" href="./comingsoon/flipclock.css">
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-19500581-1', 'auto');
+        ga('send', 'pageview');
+
+        </script>
     
 	<script type="text/javascript" src="./scripts/lib/jquery.min.js"></script>
 	<script type="text/javascript" src="./scripts/lib/PxLoader.js"></script>
@@ -91,7 +101,7 @@
         <a id='google' href='https://plus.google.com/+PragyanOrg_NITT' target='_blank' style=""> </a>
         <a id='blog' href='http://www.pragyan.org/blog' target='_blank' style=""> </a>    
         </div>
-	    <div id='footer-text'>Created By Delta Force. Designed By Julian.</div>
+	    <div id='footer-text'>Created By Delta Force. Designed By NITT Design Team.</div>
 	    <img src="./media/header.png" />
 	  </div>
       <script type="text/javascript" src='./scripts/main.js'></script>
@@ -124,7 +134,7 @@
 
                             <div class="person-contact">
                                 <br>
-                                ajay@pragyan.org<br>
+                                chairman@pragyan.org<br>
                                 <span class="ph-number">+91
                                 96001 11459</span>
                             </div>
@@ -512,7 +522,7 @@
                         "/14/sponsors/ebayindia-with-TM.png" style=
                         "height: 133px; width: 200px;"></a></p>
 
-                        <h2 style="text-align: center;">Event Partner</h2>
+                        <!--h2 style="text-align: center;">Event Partner</h2>
 
                         <p style="text-align: center;"><a href=
                         "http://www.google.com" target="_blank"><img src=
@@ -540,7 +550,7 @@
                         <p style="text-align: center;"><a href=
                         "http://tejasrf.com" target="_blank"><img alt="" src=
                         "/14/sponsors/teja.png" style=
-                        "height: 145px; width: 270px;"></a></p>
+                        "height: 145px; width: 270px;"></a></p-->
 
                         <!--h2 style="text-align: center;">Technology Partner</h2>
 
@@ -809,7 +819,7 @@
 
                     <p style="text-align: center;">&nbsp;</p>
 
-                    <p style="text-align: center;"><span>Event
+                    <!--p style="text-align: center;"><span>Event
                     Partners</span></p><br>
 
                     <p style="text-align: center;">
@@ -1053,7 +1063,7 @@
                     style="width: 140px; height: 140px;"></a><span>&nbsp;</span></p-->
 
 
-                    <p style="text-align: center;"><span>Gold
+                    <!--p style="text-align: center;"><span>Gold
                     Partners</span></p>
 
 
@@ -1125,7 +1135,7 @@
                     "_blank"><img alt="" src=
                     "http://www.pragyan.org/13/cms/templates/sponsors/img/sponsors/priority%20three/7.jpg"
                     style=
-                    "width: 140px; height: 140px;"></a></b></span></p>
+                    "width: 140px; height: 140px;"></a></b></span></p-->
 
 
 
