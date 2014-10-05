@@ -55,6 +55,14 @@
   color: white;
   top: 50%;
 }
+a{
+    color: #60D8DF;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
 #full-logo{
   width: 15% !important;
   height: auto !important;
@@ -79,7 +87,7 @@
   font-family: Geosans;
   font-size: 14px;
   z-index: 2;
-  bottom: 5px;
+  bottom: 0;
 }
 #footer img{
   width: 110%;
@@ -182,19 +190,19 @@
   color: #60D8DF;
   background: rgb(11,17,29);
   border-radius: 5px;
-  top: -5%;
+  top: -3%;
   font-size: 42px;
   text-align: center;
-  opacity: 0;
-  -webkit-transition:opacity 0.5s ease-in-out;
-  -moz-transition:all 0.5s ease-in-out;
-  -o-transition:all 0.5s ease-in-out;
-  -ms-transition:all 0.5s ease-in-out;
-  transition:all 0.5s ease-in-out;  
+  -webkit-transition: top 0.3s ease-in-out;
+  -moz-transition:all 0.3s ease-in-out;
+  -o-transition:all 0.3s ease-in-out;
+  -ms-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;  
 }
 .extra{  
     width: 100%;
     height: 38px;
+    letter-spacing: 2px;
     margin-top: 20px;
     position:relative; 
     background: rgb(16,29,45);      
@@ -230,7 +238,7 @@
 }
 
 .planets img:hover + .planet-title{
-  opacity: 1;
+  top: -6%;
 }
 
 .planets{
@@ -874,6 +882,19 @@
     height: auto !important; 
   }
 }
+@media(max-width: 700px){
+    #social-links{
+	display: none;
+    }
+    .planet-title{
+	background: none;
+	font-size: 36px;
+    }
+    .extra{
+	height: 30px;
+    }
+}
+
 
 /*Home content*/
 #content-pragyan{

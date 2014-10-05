@@ -108,7 +108,8 @@
 	}
 
 	function openPage(elem){
-		$('.planets img').animate({'opacity':0.8}, 500);
+                $('.planet-title').fadeOut(400);
+	        $('.planets img').animate({'opacity':0.8}, 500);
 		$('#footer').fadeOut('slow');
 		$('#updates').text('ESC to close');
 		$('#capsule').animate({'bottom':'-45%'}, 1000, function(){
@@ -164,19 +165,20 @@
 	}
 
 	function countdown(){
-        var clock,
+	    var clock,
         	pragyan = new Date(2015,02,26,18,00,00,00);
-        	diff = ((pragyan.getTime()-Date.now())/1000 - 28*86400);
-        clock = $('.clock').FlipClock(diff,{
-            clockFace: 'DailyCounter',
-			showSeconds: false,
-            callbacks: {
+            var diff = ((pragyan.getTime()-Date.now())/1000 - 28*86400);
+		clock = $('.clock').FlipClock(diff,{
+		    clockFace: 'DailyCounter',
+		    countdown: true,
+		    showSeconds: false,
+		    callbacks: {
 	        	stop: function() {
-	        		console.log("Pragyan'15 Is Here!");
+	        	    console.log("Pragyan'15 Is Here!");
 	        	}
-	        }
-        });                
-    }
+		    }
+		});                
+	}
 
 	function init(){
 		var aspectRatio = window.innerWidth/window.innerHeight;
@@ -279,7 +281,8 @@
 		});
 		
 		function closeModal(){
-			$('#footer').fadeIn('slow');
+                        $('.planet-title').show();
+		        $('#footer').fadeIn('slow');
 			$('#updates').text('Use arrow keys to navigate');
 			$('.avgrund-cover').css({'display':'none'});
 			$('#content').css({'top':'10%', 'opacity':0});
