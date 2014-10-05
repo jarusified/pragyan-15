@@ -1,5 +1,5 @@
 <?php
-header('Location: comingsoon/');
+//header('Location: comingsoon/');
 ?>
 <!DOCTYPE html>
 <html>
@@ -120,6 +120,16 @@ header('Location: comingsoon/');
 						</div>
 						<div class="text text-font">
 							<div  class="person-name">Sivaranjani</div>
+							<div  class="person-desig">askn alkn la  a</div>
+							<div  class="person-contact">asknka al ankn an</div>
+						</div>
+					</div>
+					<div class="person">
+						<div class='picture'>
+							<img src="./media/contacts/7.naren.png"/>
+						</div>
+						<div class="text text-font">
+							<div  class="person-name">Naren</div>
 							<div  class="person-desig">askn alkn la  a</div>
 							<div  class="person-contact">asknka al ankn an</div>
 						</div>
