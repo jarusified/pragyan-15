@@ -430,7 +430,11 @@
 				<a href="./media/gallery/9.jpg"><img src="./media/gallery/9.jpg"/></a>
 				<a href="./media/gallery/10.jpg"><img src="./media/gallery/10.jpg"/></a>
 			</div>
-			<div id="content-archives" class='content-divs'></div>
+			<div id="content-archives" class='content-divs vertical-scrollable'>
+                <a href='/12' target="_blank"> Pragyan 12</a>
+                <a href='/13' target="_blank"> Pragyan 13</a>
+                <a href='/14' target="_blank"> Pragyan 14</a>
+            </div>
 			<div id="content-sponsors" class='content-divs vertical-scrollable'>
                 <div class="sponsors-tab">
                     <button id="button-2014" style='background: #60D8DF;color: black;border-color: black;'>2014</button>
