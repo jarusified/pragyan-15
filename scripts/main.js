@@ -1,5 +1,5 @@
 !function($){
-	var baseUrl = './media/loading/', 
+	var baseUrl = './media/', 
     	$progress = $('#percent'), 
     	loader = new PxLoader();
 
@@ -7,7 +7,9 @@
     	translateWorldX = [-8,-4,4,8,0], translateWorldY = [-8,-4,4,8,0], count = 4; 
     	
  	//add images here
- 	var images=["1.png","2.png","3.png","4.png","5.png","loading.png"];
+ 	var images=["home/planets/archives.png","home/planets/sponsors.png","home/planets/contacts.png",
+ 	"home/planets/gallery.png","home/planets/pragyan.png","home/planets/stars1.png","header.png",
+ 	"full-logo.png"];
 
 	for(var i=0; i<images.length ; i++) {
        	var pxImage = new PxLoaderImage(baseUrl+images[i]); 
@@ -38,8 +40,8 @@
 
 		//fadeout when loading completes
 		if(value==5){
-			$('#loading-container').delay(0).fadeOut(function(){
-				$('#main').fadeIn();
+			$('#loading-container').delay(0).fadeOut(400,function(){
+				$('#main').fadeIn(400);
 			});	
 		}
 	}
@@ -112,7 +114,12 @@
 			$('#content').animate({'top':'10%', 'opacity':1}, 400);
 			$('#planet-cover').animate({'opacity':1}, 400);
 		});
-		if(elem=="gallery"){
+		if(elem=="gallery"){/*
+			$('#content-gallery').css({'display':'block'});
+		    window.myFlux = new flux.slider('#content-gallery', {
+		        autoplay: false,
+		        pagination: true
+		    });*/
 			$('#content-gallery').gallerie({
 					thumbboxTriggerWidth: 0.10,
     				thumbboxSpeed: 0.5,
@@ -138,6 +145,21 @@
 		
 		planetFormation(planets,starting_orbit,positions);
 	}
+
+	function countdown(){
+        var clock,
+        	pragyan = new Date(2015,02,26,18,00,00,00);
+        	diff = ((pragyan.getTime()-Date.now())/1000 - 28*86400);
+        clock = $('.clock').FlipClock(diff,{
+            clockFace: 'DailyCounter',
+			showSeconds: false,
+            callbacks: {
+	        	stop: function() {
+	        		console.log("Pragyan'15 Is Here!");
+	        	}
+	        }
+        });                
+    }
 
 	function init(){
 		var aspectRatio = window.innerWidth/window.innerHeight;
@@ -218,6 +240,7 @@
 			$('#'+planets[i].id).css({'left':x+'%','top':y+'%'});
 		}
 
+		countdown();
 
 		function shiftArrayRight(arr, count){
 			for(i=0; i<count; i++)

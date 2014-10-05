@@ -48,7 +48,7 @@ Released under MIT LICENSE
 				$imageBox = $('<div class="gallerie-imagebox"/>'),
 				$image = $('<img class="gallerie-image"/>'),
 				$imageLoading = $('<div class="gallerie-loading"/>'),
-				$captionBox = $('<div class="gallerie-captionbox"><div class="gallerie-control gallerie-control-previous">&#10148;</div><div class="gallerie-text"><div class="gallerie-title"/><div class="gallerie-index"/></div><div class="gallerie-control gallerie-control-next">&#10148;</div></div>'),
+				$captionBox = $('<div class="gallerie-captionbox"><div class="gallerie-control gallerie-control-previous">&#10097;</div><div class="gallerie-text"><div class="gallerie-title"/><div class="gallerie-index"/></div><div class="gallerie-control gallerie-control-next">&#10097;</div></div>'),
 				$thumbList = $('<ul></ul>'),
 				$thumbBox = $('<div class="gallerie-thumbbox"/>'),
 				$thumbItem,
@@ -481,7 +481,7 @@ Released under MIT LICENSE
 						options = $this.data('gallerie')['options'],
 						$thumbBox = $this.find('.gallerie-thumbbox');
 						
-					$('#'+this.id+' .gallerie-imagebox').hide().fadeIn('slow');
+					$('#'+this.id+' .gallerie-imagebox').hide().fadeIn(700);
 						
 					var $selectedItem = $thumbBox.find('.gallerie-thumbbox-selected'),
 						$nextItem = $selectedItem.next();
@@ -505,7 +505,7 @@ Released under MIT LICENSE
 						options = $this.data('gallerie')['options'],
 						$thumbBox = $this.find('.gallerie-thumbbox');
 
-					$('#'+this.id+' .gallerie-imagebox').hide().fadeIn('slow');
+					$('#'+this.id+' .gallerie-imagebox').hide().fadeIn(700);
 						
 					var $selectedItem = $thumbBox.find('.gallerie-thumbbox-selected'),
 						$prevItem = $selectedItem.prev();
