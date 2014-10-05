@@ -392,7 +392,10 @@
 			</div>
 			<div id="content-archives" class='content-divs'></div>
 			<div id="content-sponsors" class='content-divs scrollable'>
-       
+                <div class="sponsors-tab">
+                    <button id="button-2013">2013</button> 
+                    <button id="button-2014">2014</button>
+                </div>
                     <div id="sponsors-2014">
                         <h2 style="text-align: center;">Title Sponsor</h2>
 
