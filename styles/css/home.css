@@ -117,7 +117,6 @@
   border-radius: 5px;
   top: -5%;
   font-size: 42px;
-  text-transform: uppercase;
   text-align: center;
   opacity: 0;
   -webkit-transition:opacity 0.5s ease-in-out;
@@ -605,7 +604,7 @@
   width: 70%;
   height:auto;
   margin: 0 15%;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 5px;
   -webkit-transition: all 300ms ease-in;
   -moz-transition: all 300ms ease-in;
@@ -635,8 +634,8 @@
   position: absolute;
   top: 105%;
   color: white;
-  left: 10%;
-  width: 80%;
+  left: 8%;
+  width: 84%;
   height: auto;
   overflow: hidden;
   white-space: normal;
@@ -654,7 +653,9 @@
   color: #60D8DF;
 }
 .text .person-desig{
-  text-decoration: underline;
+  border-bottom: 1px solid #60D8DF;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .text .person-desig, .text .person-contact{
   font-size: 16px;
@@ -706,8 +707,9 @@
     height: 25px !important;
 }
 .flip-clock-wrapper ul li a div div.inn{
-    font-size: 15px !important;
+    font-size: 18px !important;
     background-color: #212429 !important;
+    font-family: Phantom;
 }
 .flip-clock-wrapper ul{
   margin: 1px !important;
@@ -754,4 +756,29 @@
     width: 200px !important;
     height: auto !important; 
   }
+}
+/* sponsors css*/
+#content-sponsors{
+  height: 100%;
+  font-family: Geosans;
+  overflow-y:scroll !important;
+  overflow-x:hidden !important; 
+  color:#60D8DF;
+
+}
+#sposors-tab{
+  position: absolute;
+  top:0%;
+  height: 5%;
+  width:10%;
+}
+#sponsors-tab button{
+  float:left;
+  color:#60D8DF;
+  background-color: black;
+}
+#sponsors-2013 p{
+  font-family: Geosans;
+  color:#60D8DF;
+  font-size: 1.5em;
 }
