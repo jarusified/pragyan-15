@@ -42,6 +42,19 @@
   -ms-transition:all 1s ease-in-out;
   transition:all 1s ease-in-out;
 }
+#updates{
+  width: 50%;
+  height: auto;
+  left: 50%;
+  text-align: center;
+  margin-left: -25%;
+  position: absolute;
+  font-family: Geosans;
+  font-size: 15px;
+  z-index: 5;
+  color: white;
+  top: 50%;
+}
 #full-logo{
   width: 15% !important;
   height: auto !important;

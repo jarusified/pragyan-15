@@ -1,3 +1,6 @@
+<?php
+header('Location: ../');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -317,6 +320,7 @@
                 clock.setTime(0);
                 clock.setCountdown(false);
                 clock.stop();
+                location.href = '../';
             }
             $('.clock').css({'display':'none'});
 

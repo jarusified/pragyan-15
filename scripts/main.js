@@ -110,6 +110,7 @@
 	function openPage(elem){
 		$('.planets img').animate({'opacity':0.8}, 500);
 		$('#footer').fadeOut('slow');
+		$('#updates').text('ESC to close');
 		$('#capsule').animate({'bottom':'-45%'}, 1000, function(){
 			$('.content-divs').css({'display':'none'});
 			$('.avgrund-cover').css({'display':'block'});
@@ -238,10 +239,13 @@
 			}
 		});
 
-		$('.content-close').click(function(){
-			closeModal();
-		});
 
+		window.onload = function(){
+			$('.content-close').bind('click', function(){
+				console.log('aaa');
+				closeModal();
+			});
+		}
 
 		// starts preloader
 		loader.start();  
@@ -276,6 +280,7 @@
 		
 		function closeModal(){
 			$('#footer').fadeIn('slow');
+			$('#updates').text('Use arrow keys to navigate');
 			$('.avgrund-cover').css({'display':'none'});
 			$('#content').css({'top':'10%', 'opacity':0});
 			$('#planet-cover').css({'opacity':0});

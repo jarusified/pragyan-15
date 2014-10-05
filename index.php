@@ -52,6 +52,7 @@
 	<div id="main">
 	  <div id='header'>
 	  	<div class='clock'></div>
+        <div id='updates'>Use arrow keys to navigate</div>
 	  	<img id='full-logo' src='./media/full-logo.png' />
 	  	<img id='header-bg' src='./media/header.png' />
 	  </div>
