@@ -133,7 +133,6 @@
                             </div>
 
                             <div class="person-contact">
-                                <br>
                                 chairman@pragyan.org<br>
                                 <span class="ph-number">+91
                                 96001 11459</span>
@@ -154,7 +153,6 @@
                             </div>
 
                             <div class="person-contact">
-                                <br>
                                 gm@pragyan.org<br>
                                 <span class="ph-number">+91
                                 98945 01984</span>
@@ -175,7 +173,6 @@
                             </div>
 
                             <div class="person-contact">
-                                <br>
                                 sarath@pragyan.org<br>
                                 <span class="ph-number">+91
                                 87608 94418</span>
@@ -196,7 +193,6 @@
                             </div>
 
                             <div class="person-contact">
-                                <br>
                                 prathamesh@pragyan.org<br>
                                 <span class="ph-number">+91
                                 72009 38751</span>
@@ -217,7 +213,6 @@
                             </div>
 
                             <div class="person-contact">
-                                <br>
                                 sriram@pragyan.org<br>
                                 <span class="ph-number">+91
                                  94878 94903</span>
@@ -238,7 +233,6 @@
                             </div>
 
                             <div class="person-contact">
-                                <br>
                                 ranjani@pragyan.org<br>
                                 <span class="ph-number">+91
                                 96268 83116</span>
@@ -255,11 +249,10 @@
                             </div>
 
                             <div class="person-desig">
-                                 Head, Organising committee
+                                 Head, Organising Committee
                             </div>
 
                             <div class="person-contact">
-                                <br>
                                 naren@pragyan.org<br>
                                 <span class="ph-number">+91
                                 98947 78568</span>
@@ -280,7 +273,6 @@
                             </div>
 
                             <div class="person-contact">
-                                <br>
                                 karthik@pragyan.org<br>
                                 <span class="ph-number">+91
                                  94447 17154</span>
@@ -301,7 +293,6 @@
                             </div>
 
                             <div class="person-contact">
-                                <br>
                                 ruban@pragyan.org<br>
                                 <span class="ph-number">+91
                                 95003 69604</span>
@@ -322,7 +313,6 @@
                             </div>
 
                             <div class="person-contact">
-                                <br>
                                 neethi@pragyan.org<br>
                                 <span class="ph-number">+91
                                 88709 38524</span>
@@ -343,7 +333,6 @@
                             </div>
 
                             <div class="person-contact">
-                                <br>
                                 dhuwaara@pragyan.org<br>
                                 <span class="ph-number">+91
                                 76671 27662</span>
@@ -364,7 +353,6 @@
                             </div>
 
                             <div class="person-contact">
-                                <br>
                                 yaazhini@pragyan.org<br>
                                 <span class="ph-number">+91
                                 90427 08201</span>
@@ -385,7 +373,6 @@
                             </div>
 
                             <div class="person-contact">
-                                <br>
                                 julian@pragyan.org<br>
                                 <span class="ph-number">+91
                                  99528 07586</span>
@@ -406,7 +393,6 @@
                             </div>
 
                             <div class="person-contact">
-                                <br>
                                 prasanna@pragyan.org<br>
                                 <span class="ph-number">+91
                                 99408 69384</span>
@@ -427,7 +413,6 @@
                             </div>
 
                             <div class="person-contact">
-                                <br>
                                 vishnu@pragyan.org<br>
                                 <span class="ph-number">+91
                                 94883 65452</span>
@@ -449,7 +434,6 @@
                             </div>
 
                             <div class="person-contact">
-                                <br>
                                 aravindn@pragyan.org<br>
                                 <span class="ph-number">+91
                                 97910 87893</span>

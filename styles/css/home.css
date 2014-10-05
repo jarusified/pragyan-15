@@ -671,10 +671,11 @@
 }
 .person{
   display: inline-block;  
-  width:250px;
+  width:200px;
   height:auto;
   position: relative;
   padding: 10px;
+  margin: 0 10px;
 }
 
 .picture{
@@ -714,8 +715,8 @@
   position: absolute;
   top: 105%;
   color: white;
-  left: 8%;
-  width: 84%;
+  left: 0;
+  width: 100%;
   height: auto;
   overflow: hidden;
   white-space: normal;
