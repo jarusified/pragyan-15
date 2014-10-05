@@ -298,21 +298,32 @@
             clock = $('.clock').FlipClock({
                 clockFace: 'HourlyCounter',
                 autoStart: false,
+                callbacks:{  
+                            stop:function(){
+                                $('.message').html('The clock has stopped!')
+                            }
+                        }
 
             });
                     
-            var tomo = new Date(2014,10,05,20,00,00,00);
-            var seconds=(tomo.getTime()-Date.now())/1000 -31*86400;
+            var tomo = new Date(2014,10,05,14,32,30,00);
+            var seconds=Math.floor((tomo.getTime()-Date.now())/1000 -31*86400);
             if(seconds>0){
-                clock.setTime(seconds);
+                clock.setTime(5);
                 clock.setCountdown(true);
                 clock.start();
             }
             else{
                 clock.setTime(0);
                 clock.setCountdown(false);
+                clock.stop();
             }
+
+                clock.setTime(seconds);
+                clock.setCountdown(true);
+                clock.start();
             $('.clock').css({'display':'none'});
+
         }
         countdown();
 
