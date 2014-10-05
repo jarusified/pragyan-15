@@ -541,14 +541,14 @@
                         "/14/sponsors/teja.png" style=
                         "height: 145px; width: 270px;"></a></p>
 
-                        <h2 style="text-align: center;">Technology Partner</h2>
+                        <!--h2 style="text-align: center;">Technology Partner</h2>
 
                         <p style="text-align: center;"><a href=
                         "http://www.toshiba.com" target="_blank"><img src=
                         "/14/sponsors/toshiba.jpg" style=
                         "height: 50px; width: 161px;"></a></p>
 
-                        <h2 style="text-align: center;">Pragyan Young Mind
+                        <!--h2 style="text-align: center;">Pragyan Young Mind
                         Partners</h2>
 
                         <p style="text-align: center;"><a href="#" target=
@@ -999,7 +999,7 @@
                     style=
                     "width: 140px; height: 140px;"></span></p>
 
-                    <p style="text-align: center;"><span>Other
+                    <!--p style="text-align: center;"><span>Other
                     Sponsors</span></p>
 
                     <p style="text-align: center;">
@@ -1049,7 +1049,7 @@
                     "http://www.reynolds-india.com" target=
                     "_blank"><img alt="Reynolds" src=
                     "/13/sponsors/Reynolds--PSR-Partner.jpg"
-                    style="width: 140px; height: 140px;"></a><span>&nbsp;</span></p>
+                    style="width: 140px; height: 140px;"></a><span>&nbsp;</span></p-->
 
 
                     <p style="text-align: center;"><span>Gold
