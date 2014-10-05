@@ -282,7 +282,7 @@
                     </div>
                      <div class="person">
                         <div class='picture'><img src=
-                        "./media/contacts/10.neethi.png"></div>
+                        "./media/contacts/neethi.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">
@@ -362,7 +362,7 @@
                     </div>
                      <div class="person">
                         <div class='picture'><img src=
-                        "./media/contacts/6.siva.png"></div>
+                        "./media/contacts/siva.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">
