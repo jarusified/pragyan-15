@@ -1,5 +1,5 @@
 <?php
-//header('Location: comingsoon/');
+header('Location: comingsoon/');
 ?>
 <!DOCTYPE html>
 <html>

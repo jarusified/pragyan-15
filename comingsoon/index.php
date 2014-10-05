@@ -309,7 +309,7 @@
             var tomo = new Date(2014,10,05,21,00,00,00);
             var seconds=Math.floor((tomo.getTime()-Date.now())/1000 -31*86400);
             if(seconds>0){
-                clock.setTime(5);
+                clock.setTime(seconds);
                 clock.setCountdown(true);
                 clock.start();
             }
@@ -318,10 +318,6 @@
                 clock.setCountdown(false);
                 clock.stop();
             }
-
-                clock.setTime(seconds);
-                clock.setCountdown(true);
-                clock.start();
             $('.clock').css({'display':'none'});
 
         }
