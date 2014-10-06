@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="./styles/css/lib/gallerie.css"/>
 	<link rel="stylesheet" type="text/css" href="./styles/css/lib/gallerie-effects.css"/>
 	<link rel="stylesheet" href="./comingsoon/flipclock.css">
+	<link rel="shortcut icon" type="image/png" href="./media/favicon.png"/>
         <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -63,7 +64,7 @@
 	  <div id='header'>
 	  	<div class='clock'></div>
         <div id='updates'>Use arrow keys to navigate</div>
-	  	<img id='full-logo' src='./media/full-logo.png' />
+	  	<img id='full-logo' style='cursor: pointer' src='./media/full-logo2.png' />
 	  	<img id='header-bg' src='./media/header.png' />
 	  </div>
       <div id="capsule">    
@@ -101,7 +102,7 @@
         <a id='google' href='https://plus.google.com/+PragyanOrg_NITT' target='_blank' style=""> </a>
         <a id='blog' href='http://www.pragyan.org/blog' target='_blank' style=""> </a>    
         </div>
-	  <div id='footer-text'>Created By <a href='https://www.facebook.com/delta.nit.trichy'>Delta Force</a>. Designed By <b>NITT Design Team</b>.<br/>For queries, contact <b>prasanna@pragyan.org</b></div>
+	  <div id='footer-text'>Created By <a href='https://www.facebook.com/delta.nit.trichy'>Delta Force</a>. Designed By <b>NITT Design Team</b>. For queries, contact <b>prasanna@pragyan.org</b></div>
 	    <img src="./media/header.png" />
 	  </div>
       <script type="text/javascript" src='./scripts/main.js'></script>
