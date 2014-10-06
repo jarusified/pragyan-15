@@ -9,7 +9,7 @@
  	//add images here
  	var images=["home/planets/archives.png","home/planets/sponsors.png","home/planets/contacts.png",
  	"home/planets/gallery.png","home/planets/pragyan.png", "header.png",
- 	"contacts/1.ajay.png", "contacts/2.gm.png", "contacts/3.sarath.png", "contacts/4.prathamesh.png", 
+ 	"contacts/aplhonse.png","contacts/director.png","contacts/1.ajay.png", "contacts/2.gm.png", "contacts/3.sarath.png", "contacts/4.prathamesh.png", 
  	"contacts/5.sriram.png", "contacts/6.siva.png", "contacts/7.naren.png", "contacts/8.kram.png", "contacts/9.ruban.png",
  	"contacts/neethi.png", "contacts/11.dhuwaara.png", "contacts/12.yaazhini.png",  "contacts/13.julian.png",
  	"contacts/14.prasanna.png",  "contacts/15.vishnu.png",  "contacts/16.aravind.png"];
@@ -109,18 +109,29 @@
 	}
 
 	function openPage(elem){
-                $('.planet-title').fadeOut(400);
-	        $('.planets img').animate({'opacity':0.8}, 500);
+		if(elem=='contacts'){
+			$('#contacts-info').show();
+		}
+		if(elem=='pragyan'){
+			$('#pragyan-info').show();
+		}
+        $('.planet-title').fadeOut(400);
+        $('.planets img').animate({'opacity':0.8}, 500);
+		if(elem=='archives'){
+			$('#archives-info').show();
+		}
 		$('#footer').fadeOut('slow');
-		$('#updates').text('ESC to close');
 		$('#capsule').animate({'bottom':'-45%'}, 1000, function(){
 			$('.content-divs').css({'display':'none'});
 			$('.avgrund-cover').css({'display':'block'});
 			$('#content-'+elem).css({'display':'block'});	
 			$('#content').animate({'top':'10%', 'opacity':1}, 400);
 			$('#planet-cover').animate({'opacity':1}, 400);
+			$('#updates').text('ESC to close');
 		});
-		if(elem=="gallery"){/*
+		if(elem=="gallery"){
+			$('#gallery-info').show();
+			/*
 			$('#content-gallery').css({'display':'block'});
 		    window.myFlux = new flux.slider('#content-gallery', {
 		        autoplay: false,
@@ -134,6 +145,7 @@
 			$('#content-gallery').gallerie('open');
 		}
 		if(elem=='sponsors'){
+			$('#sponsors-info').show();
 			console.log('Increase Size');
 			$('#button-2013').click(function(){
                 $('#sponsors-2014').css('display','none');
@@ -282,8 +294,9 @@
 		});
 		
 		function closeModal(){
-                        $('.planet-title').show();
-		        $('#footer').fadeIn('slow');
+        	$('.info-field').hide();
+        	$('.planet-title').show();
+	        $('#footer').fadeIn('slow');
 			$('#updates').text('Use arrow keys to navigate');
 			$('.avgrund-cover').css({'display':'none'});
 			$('#content').css({'top':'10%', 'opacity':0});

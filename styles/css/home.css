@@ -113,34 +113,35 @@ a:hover{
   border-radius: 3px;
   margin-top: 2px;
   left: 5px;
+  bottom: 0;
 }
 #fb{
-  background: url('../../media/social/fb1.png') 0 0;
+  background: url('../../media/social/fb2.png') 0 0;
+  background-position: -30px;
 }
 #google{
-  background: url('../../media/social/google1.png') 0 0;
+  background: url('../../media/social/google2.png') 0 0;
+  background-position: -30px;
 }
 #twitter{
-  background: url('../../media/social/twitter1.png') 0 0;
+  background: url('../../media/social/twitter2.png') 0 0;
+  background-position: -30px;
 }
 #blog{
-  background: url('../../media/social/blog1.png') 0 0;
+  background: url('../../media/social/blog2.png') 0 0;
+  background-position: -30px;
 }
 #fb:hover{
-  background: url('../../media/social/fb1.png') 0 0;
-  background-position: 30px;
+  background: url('../../media/social/fb2.png') 0 0;
 }
 #google:hover{
-  background: url('../../media/social/google1.png') 0 0;
-  background-position: 30px;
+  background: url('../../media/social/google2.png') 0 0;
 }
 #twitter:hover{
-  background: url('../../media/social/twitter1.png') 0 0;
-  background-position: 30px;
+  background: url('../../media/social/twitter2.png') 0 0;
 }
 #blog:hover{
-  background: url('../../media/social/blog1.png') 0 0;
-  background-position: 30px;
+  background: url('../../media/social/blog2.png') 0 0;
 }
 #planet-set, #capsule{
   width: 100%;
@@ -321,11 +322,12 @@ a:hover{
   opacity: 0;
   position: fixed;
   z-index: 1;
-  background-image: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.75) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 0.75)), -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.75) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 0.75));
+/*  background-image: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.75) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 0.75)), -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.75) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 0.75));
   background-image: -webkit-linear-gradient(45deg, rgba(0, 0, 0, .75) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .75) 75%, rgba(0, 0, 0, 0.75)), -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.75) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .75) 75%, rgba(0, 0, 0, .75));
   background-position: 0 0pt, 4px 4px;
-  background-size: 8px 8px;
+  background-size: 8px 8px;*/
   background-color: #111;
+  background-color: #080808;
   border: 2px solid white;
   border-bottom: none;
 }
@@ -679,18 +681,20 @@ a:hover{
   height: 90%;
   width: 80%;
   top:10%;
-  left: 10%;
-  overflow-x:scroll !important;
-  overflow-y:hidden !important;
+  left: 50%;
+  margin-left: -39%;
+  overflow-y:scroll !important;
+  overflow-x:hidden !important;
   white-space: nowrap;
 }
 .person{
   display: inline-block;  
-  width:200px;
+  width:150px;
   height:auto;
   position: relative;
   padding: 10px;
-  margin: 0 10px;
+  margin: 0 10px 120px 10px;
+  float: left;
 }
 
 .picture{
@@ -742,19 +746,19 @@ a:hover{
   width: 100%;  
 }
 
-.text .person-name{
-  font-size: 17px;
+.person-name{
+  font-size: 12px;
   text-transform: uppercase;
   font-weight: bolder;
   color: #60D8DF;
 }
-.text .person-desig{
+.person-desig{
   border-bottom: 1px solid #60D8DF;
   padding-bottom: 8px;
   margin-bottom: 8px;
 }
-.text .person-desig, .text .person-contact{
-  font-size: 16px;
+.person-desig, .person-contact{
+  font-size: 14px;
   color: #CCC;
   font-weight: bold;
 }
@@ -964,4 +968,49 @@ a:hover{
   color:#60D8DF;
   font-size: 1.5em;
   font-weight: bold;
+}
+
+
+/* Planet Info */
+.info-field{
+  display: none;
+  color: white;
+  font-family: Geosans;
+  text-align: center;
+}
+#sponsors-info .info-title{
+  width: 100%;
+  color: silver;
+  text-align: center;
+  font-family: Phantom;
+  font-size: 25px;
+  margin-top: 15px;
+  border-bottom: 1px solid #60D8DF;
+}
+#sponsors-info .info-left{
+  left: 0;
+  margin-top: 10px;
+  position: absolute;
+  width: 250px;
+}
+#sponsors-info .info-right{
+  right: 0;
+  margin-top: 10px;
+  position: absolute;
+  width: 250px;
+}
+#sponsors-info .info-others, #contacts-info .info-others, #gallery-info .info-others, #archives-info .info-others, #pragyan-info .info-others{
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  color: #60D8DF;
+  font-size: 16px;
+  font-weight: bold;
+}
+#contacts-info .info-others{
+  font-size: 22px;
+}
+#pragyan-info .info-others, #gallery-info .info-others, #archives-info .info-others{
+  font-size: 25px;
+  color: rgb(219, 219, 219);
 }
