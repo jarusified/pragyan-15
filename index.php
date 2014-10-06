@@ -362,7 +362,7 @@
                     </div>
                      <div class="person">
                         <div class='picture'><img src=
-                        "./media/contacts/siva.png"></div>
+                        "./media/contacts/6.siva.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">

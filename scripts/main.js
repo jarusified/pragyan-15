@@ -10,7 +10,7 @@
  	var images=["home/planets/archives.png","home/planets/sponsors.png","home/planets/contacts.png",
  	"home/planets/gallery.png","home/planets/pragyan.png", "header.png",
  	"contacts/1.ajay.png", "contacts/2.gm.png", "contacts/3.sarath.png", "contacts/4.prathamesh.png", 
- 	"contacts/5.sriram.png", "contacts/siva.png", "contacts/7.naren.png", "contacts/8.kram.png", "contacts/9.ruban.png",
+ 	"contacts/5.sriram.png", "contacts/6.siva.png", "contacts/7.naren.png", "contacts/8.kram.png", "contacts/9.ruban.png",
  	"contacts/neethi.png", "contacts/11.dhuwaara.png", "contacts/12.yaazhini.png",  "contacts/13.julian.png",
  	"contacts/14.prasanna.png",  "contacts/15.vishnu.png",  "contacts/16.aravind.png"];
 
@@ -64,8 +64,8 @@
 			x=orbit.h+orbit.a*Math.cos(theta);
 			y=orbit.k+orbit.b*Math.sin(theta);
 			positions.push({'angle':theta,'x':x,'y':y});
-			$('#'+planets[i].id).animate({'left':x+'%', 'top':y+'%'},1000);
-			//$('#'+planets[i].id).css({'left':x+'%','top':y+'%'});
+			//$('#'+planets[i].id).animate({'left':x+'%', 'top':y+'%'},1000);
+			$('#'+planets[i].id).css({'left':x+'%','top':y+'%'});
 		}
 	}
 	
@@ -80,7 +80,8 @@
 			$('#'+planets[i].id).bind('transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function(){
 			    $('#capsule').removeClass('planets-zoom-in planets-zoom-out').addClass('planets-zoom-in');	
 			});
-			$('#'+planets[i].id).animate({'top':positions[i].y+'%','left':positions[i].x+'%'}, 1000);	
+			//$('#'+planets[i].id).animate({'top':positions[i].y+'%','left':positions[i].x+'%'}, 1000);
+			$('#'+planets[i].id).css({'top':positions[i].y+'%','left':positions[i].x+'%'});	
 		}
 		if(direction=='left'){
 			if(count==0) count=4;
