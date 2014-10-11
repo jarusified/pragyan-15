@@ -29,6 +29,7 @@
 	<script type="text/javascript" src="./scripts/lib/avrgrund.js"></script>
 	<script type="text/javascript" src="./scripts/lib/flux.min.js"></script>
 	<script type="text/javascript" src="./scripts/lib/jquery.gallerie.js"></script>
+    <script type="text/javascript" src="./scripts/lib/jquery.transit.min.js"></script>
 	<script src="./comingsoon/flipclock.min.js"></script>
     
 </head>

@@ -249,11 +249,11 @@ a:hover{
   margin: -20% 0 0 -20%;
   cursor: pointer;
 
-  -webkit-transition:all 1s ease-in-out;
+ /* -webkit-transition:all 1s ease-in-out;
   -moz-transition:all 1s ease-in-out;
   -o-transition:all 1s ease-in-out;
   -ms-transition:all 1s ease-in-out;
-  transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;*/
 
 /*  -webkit-transition:-webkit-transform 1s ease-in-out;
   -moz-transition:-moz-transform 1s ease-in-out;
@@ -261,7 +261,10 @@ a:hover{
   -ms-transition:-ms-transform 1s ease-in-out;
   transition:transform 1s ease-in-out;*/
 }
-.planet-current{
+.planet-current img{
+  opacity: 1;
+}
+/*.planet-current{
   -webkit-transform:scale(0.8);
   -moz-transform:scale(0.8);
   -ms-transform:scale(0.8);
@@ -269,9 +272,7 @@ a:hover{
   transform:scale(0.8);
   z-index: 5;
 }
-.planet-current img{
-  opacity: 1;
-}
+
 .planet-neighbour{
   -webkit-transform:scale(0.4,0.4);
   -moz-transform:scale(0.4,0.4);
@@ -287,7 +288,7 @@ a:hover{
   -o-transform:scale(0.2,0.2);
   transform:scale(0.2,0.2);
   z-index: 1;
-}
+}*/
 .planets img{
   width: 94%;
   height: auto;
