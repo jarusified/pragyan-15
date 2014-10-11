@@ -64,13 +64,12 @@
 			x=orbit.h+orbit.a*Math.cos(theta);
 			y=orbit.k+orbit.b*Math.sin(theta);
 			positions.push({'angle':theta,'x':x,'y':y});
-			$('#'+planets[i].id).css({'left':x+'%','top':y+'%'});
+			//$('#'+planets[i].id).css({'left':x+'%','top':y+'%'});
+			$('#'+planets[i].id).transition({top:positions[i].y+'%',left:positions[i].x+'%',scale:(scale[i],scale[i])},1000,'ease');
+
 		}
 	}
 	
-	function animate(x,y){
-			
-	}
 
 	function move(planets,positions,map,scale,zindex,direction){
 	  var animationEnd = false;
@@ -169,19 +168,6 @@
 		}
 	}
 
-	function startAnimation(planets){
-		var starting_orbit={
-				h:50,
-				k:50,
-				a:40,
-				b:0
-		};
-		positions=[];
-		$('#capsule').css('transform','scale(1.0,1.0)');
-		$('#capsule').css('-webkit-transform','scale(1.0,1.0)');
-		
-		planetFormation(planets,starting_orbit,positions,scale,zindex);
-	}
 
 	function countdown(){
 	    var clock,
@@ -273,7 +259,7 @@
 		loader.start();  
 		
 		
-		//planetFormation(planets,orbit,positions);
+		planetFormation(planets,orbit,positions,scale,zindex);
 		for(var i=0;i<planets.length;i++){
 			theta=(((i*360)/planets.length)+90)*Math.PI/180;
 			x=orbit.h+orbit.a*Math.cos(theta);
