@@ -229,7 +229,7 @@
                             </div>
 
                             <div class="person-desig">
-                                Head, Sponsorships
+                                Head, Marketing
                             </div>
 
                             <div class="person-contact">
@@ -249,7 +249,7 @@
                             </div>
 
                             <div class="person-desig">
-                                Head, Industrial Collaborations
+                                Head, Marketing
                             </div>
 
                             <div class="person-contact">
@@ -1216,7 +1216,6 @@
                     </div>
                 </div>
                 <div class='info-others'>
-                Some of our sponsors in the previous editions of Pragyan
                 </div>
             </div>
 		</div>
