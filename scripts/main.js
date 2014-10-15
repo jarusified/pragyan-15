@@ -202,6 +202,7 @@
 		var map=['planet-current','planet-neighbour','planet-others','planet-others', 'planet-neighbour'];
 		var scale=[0.8,0.4,0.2,0.2,0.4];
 		var zindex=[5,3,1,1,3];
+		var double_click=true;
 		//scroll bar
 		//$('#content-contacts').jScrollPane();
 
@@ -212,7 +213,7 @@
 		var planet_id = [], from, to;
 
 		$('.planets').bind('click', function(event){
-			if($('#'+this.id).hasClass('planets')){
+			if($('#'+this.id).hasClass('planets') && double_click==false){
 				for(i=0; i<planets.length; i++){
 					planet_id[i] = planets[i].id;
 				}
@@ -305,7 +306,32 @@
 			content=false;
 			press = true;
 		}
-	
+		
+		jQuery.fn.single_double_click = function(single_click_callback, double_click_callback, timeout) {
+  			return this.each(function(){
+    			var clicks = 0, self = this;
+    			jQuery(this).click(function(event){
+      				clicks++;
+      				if (clicks == 1) {
+        				setTimeout(function(){
+          					if(clicks == 1) {
+           						 single_click_callback.call(self, event);
+          					} else {
+           						 double_click_callback.call(self, event);
+         					}
+          					clicks = 0;
+        				}, timeout || 300);
+      				}
+    			});
+  			});
+		}
+
+		
+		$('.planets').single_double_click(function(){
+			double_click=false;
+		},function(){
+			double_click=true;
+		})
 		function onkeydown(event){
 
 			if(!press){
