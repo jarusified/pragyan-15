@@ -327,6 +327,13 @@
   			});
 		}
 
+		
+		$('.planets').single_double_click(function(){
+			double_click=false;
+		},function(){
+			double_click=true;
+		});
+
 
 		function onkeydown(event){
 
