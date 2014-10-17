@@ -75,9 +75,10 @@
 	  $.transit.useTransitionEnd = true;
 	  $('#capsule').removeClass('planets-zoom-in planets-zoom-out');
 	  $('#capsule').addClass('planets-zoom-out').bind('animationend	animationend webkitAnimationEnd oanimationend MSAnimationEnd', function(){
+	  	console.log(animationEnd);
 	   if(animationEnd === false){
 	   	animationEnd = true;
-	   	for(var i=0;i<planets.length;i++){	
+	   	for(var i=0;i<planets.length;i++){
 			$('#'+planets[i].id).removeClass('planet-current planet-neighbour planet-others').addClass(map[i]);
 			$('#'+planets[i].id).bind('transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function(){
 			    $('#capsule').removeClass('planets-zoom-in planets-zoom-out').addClass('planets-zoom-in');	
@@ -326,12 +327,7 @@
   			});
 		}
 
-		
-		$('.planets').single_double_click(function(){
-			double_click=false;
-		},function(){
-			double_click=true;
-		})
+
 		function onkeydown(event){
 
 			if(!press){
@@ -349,6 +345,7 @@
 					press=true;
 				}	
 			}
+			event.preventDefault();
 
 		}	
 	}
