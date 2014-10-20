@@ -141,6 +141,24 @@
                         </div>
                     </div>
                     <div class="person">
+                        <div class='picture' id="size-picture"><img src=
+                        "./media/contacts/convenor.png"></div>
+
+                        <div class="text text-font">
+                            <div class="person-name">
+                                Dr. G.Venkatesa Prabhu
+                            </div>
+
+                            <div class="person-desig">
+                                Convenor   
+                            </div>
+
+                            <div class="person-contact">
+                                Deam, Students Welfare
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
                         <div class='picture'><img src=
                         "./media/contacts/alphonse.png"></div>
 
@@ -1219,7 +1237,40 @@
                 </div>
             </div>
 		</div>
-	  </div>	
+	  </div>
+      <div id="marketing-info">
+             <div class="content-close">&#120;</div>
+             <div class='left'>
+                    <div class="person-name">
+                        Prathamesh Amrutkar 
+                    </div>
+                    <div class="person-desig">
+                        Head, Sponsorships
+                    </div>
+                    <div class="person-contact">
+                        prathamesh@pragyan.org<br>
+                        <span class="ph-number">+91
+                        72009 38751</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="person-name">
+                        Prathamesh Amrutkar 
+                    </div>
+                    <div class="person-desig">
+                        Head, Sponsorships
+                    </div>
+                    <div class="person-contact">
+                        prathamesh@pragyan.org<br>
+                        <span class="ph-number">+91
+                        72009 38751</span>
+                    </div>
+                </div>
+      </div>
+      <div id="marketing-openup">
+            Want to associate with us? Click <a id="open-marketing"> Here </a>
+
+      </div>	
 	</div>
 	
 

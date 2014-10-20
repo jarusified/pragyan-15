@@ -729,6 +729,10 @@ a:hover{
   -webkit-box-shadow: 0 8px 6px -6px #60D8DF;
   -moz-box-shadow: 0 8px 6px -6px #60D8DF;
 }
+#size-picture{
+  width: 200px;
+  height: 200px;
+}
 .text{
   font-size: 16px;
   text-align: center;
@@ -1014,4 +1018,46 @@ a:hover{
 #pragyan-info .info-others, #gallery-info .info-others, #archives-info .info-others{
   font-size: 25px;
   color: rgb(219, 219, 219);
+}
+#marketing-info{
+  display: none;
+  width:75%;
+  position: fixed;
+  z-index: 3;
+  bottom:5%;
+  font-family: Geosans;
+  font-size: 20px;
+  left:10%;
+  text-align: center;
+  height: 30%;
+}
+.left{
+  position: absolute;
+  height: auto;
+  width: 25%;
+  left:0%;
+  height: auto;
+  margin-left: 10px;
+}
+.right{
+  position: absolute;
+  height: auto;
+  width:25%;
+  right:0;
+
+}
+#marketing-openup{
+  width:40%;
+  height:3%;
+  left:30%;
+  position: fixed;
+  text-align: center;
+  font-size: 16px;
+  font-family: Phantom;
+  bottom:5%;
+  z-index: 3;
+  color:white;
+}
+#marketing-openup a{
+  cursor: pointer;
 }

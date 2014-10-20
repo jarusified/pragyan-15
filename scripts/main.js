@@ -249,9 +249,12 @@
 
 		window.onload = function(){
 			$('.content-close').bind('click', function(){
-				console.log('aaa');
 				closeModal();
 			});
+			$('#open-marketing').bind('click',function(event){
+				$('#marketing-info').fadeIn();
+			});
+
 		}
 
 		// starts preloader
@@ -293,6 +296,7 @@
 			$('.avgrund-cover').css({'display':'none'});
 			$('#content').css({'top':'10%', 'opacity':0});
 			$('#planet-cover').css({'opacity':0});
+			$('#marketing-info').css({'display':'none'});
 			for(var i=0;i<planets.length;i++){
 				if($('#'+planets[i].id).hasClass('planet-current-scale')){
 					$('#'+planets[i].id).removeClass('planet-current-scale').addClass('planet-current');
@@ -333,7 +337,7 @@
 		},function(){
 			double_click=true;
 		});
-
+	
 
 		function onkeydown(event){
 
@@ -352,7 +356,6 @@
 					press=true;
 				}	
 			}
-			event.preventDefault();
 
 		}	
 	}
