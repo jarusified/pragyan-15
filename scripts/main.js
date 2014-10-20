@@ -12,7 +12,7 @@
  	"contacts/aplhonse.png","contacts/director.png","contacts/1.ajay.png", "contacts/2.gm.png", "contacts/3.sarath.png", "contacts/4.prathamesh.png", 
  	"contacts/5.sriram.png", "contacts/6.siva.png", "contacts/7.naren.png", "contacts/8.kram.png", "contacts/9.ruban.png",
  	"contacts/neethi.png", "contacts/11.dhuwaara.png", "contacts/12.yaazhini.png",  "contacts/13.julian.png",
- 	"contacts/14.prasanna.png",  "contacts/15.vishnu.png",  "contacts/16.aravind.png"];
+ 	"contacts/14.prasanna.png",  "contacts/15.vishnu.png",  "contacts/16.aravind.png","contacts/convenor.png"];
 
 	for(var i=0; i<images.length ; i++) {
        	var pxImage = new PxLoaderImage(baseUrl+images[i]); 

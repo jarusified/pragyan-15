@@ -556,26 +556,19 @@
                         "_blank"><img alt="" src="/14/sponsors/mastek.jpg" style=
                         "width: 192px; height: 127px;"></a></p>
 
-                        <h2 style="text-align: center;">Online Shopping
-                        Partner</h2>
 
-                        <p style="text-align: center;"><a href=
-                        "http://www.ebay.in/" target="_blank"><img src=
-                        "/14/sponsors/ebayindia-with-TM.png" style=
-                        "height: 133px; width: 200px;"></a></p>
-
-                        <!--h2 style="text-align: center;">Event Partner</h2>
+                        <h2 style="text-align: center;">Event Partner</h2>
 
                         <p style="text-align: center;"><a href=
                         "http://www.google.com" target="_blank"><img src=
                         "/14/sponsors/google.jpg" style=
-                        "height: 133px; width: 200px;"></a>&nbsp;&nbsp;&nbsp;<a href="http://www.jindalsteelpower.com"
+                        "height: 133px; width: 200px;"></a>&nbsp;&nbsp;&nbsp;<!--a href="http://www.jindalsteelpower.com"
                         target="_blank"><img src="/14/sponsors/JSPL-logo.jpg"
                         style=
-                        "height: 133px; width: 200px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.indix.com"
+                        "height: 133px; width: 200px;"></a-->&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.indix.com"
                         target="_blank"><img src="/14/sponsors//indix.PNG"
                         style=
-                        "height: 133px; width: 200px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.isteel.in"
+                        "height: 133px; width: 200px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;<!--a href="http://www.isteel.in"
                         target="_blank"><img src="/14/sponsors/isteel.jpg"
                         style=
                         "height: 133px; width: 200px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.temenos.com"
@@ -584,15 +577,23 @@
                         "height: 133px; width: 200px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.automotiveml.com/"
                         target="_blank"><img src="/14/sponsors/aml-logo.png"
                         style=
-                        "width: 150px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.schneider-electric.com/site/home/index.cfm/in/"
+                        "width: 150px;"></a-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.schneider-electric.com/site/home/index.cfm/in/"
                         target="_blank"><img src=
                         "/14/sponsors/Schneider_Electric.jpg" style=
                         "width: 150px;"></a></p>
 
-                        <p style="text-align: center;"><a href=
+                        <!--p style="text-align: center;"><a href=
                         "http://tejasrf.com" target="_blank"><img alt="" src=
                         "/14/sponsors/teja.png" style=
                         "height: 145px; width: 270px;"></a></p-->
+
+                        <h2 style="text-align: center;">Online Shopping
+                        Partner</h2>
+
+                        <p style="text-align: center;"><a href=
+                        "http://www.ebay.in/" target="_blank"><img src=
+                        "/14/sponsors/ebayindia-with-TM.png" style=
+                        "height: 133px; width: 200px;"></a></p>
 
                         <!--h2 style="text-align: center;">Technology Partner</h2>
 
@@ -822,7 +823,7 @@
                     Sponsor</span></p>
 
 
-                    <p style="text-align: center;"><span><a href=
+                    <!--p style="text-align: center;"><span><a href=
                     "http://www.wishberry.in/" target=
                     "_blank"><img alt="Wish berry" src=
                     "/13/sponsors/Wishberry-Crowdfunding-Partner.jpg"
@@ -830,13 +831,13 @@
                     &nbsp;&nbsp;<a href="http://www.intuit.in"
                     target="_blank"><img alt="Intuit" src=
                     "/13/sponsors/Intuit-Major-Sponsor.jpg" style=
-                    "width: 140px; height: 140px;"></a></span></p>
+                    "width: 140px; height: 140px;"></a></span></p-->
 
                     <p style="text-align: center;">
-                    <span><b><a href="http://www.bhel.com" target=
+                    <span><b><!--a href="http://www.bhel.com" target=
                     "_blank"><img alt="BHEL" src=
                     "/13/sponsors/BHEL.jpg" style=
-                    "width: 140px; height: 140px;"></a></b>
+                    "width: 140px; height: 140px;"></a--></b>
                      <b>&nbsp;<a href="http://www.goldmansachs.com" target=
                     "_blank"><img alt="" src=
                     "/13/sponsors/GS.jpg"></a></b><b><a href=
@@ -846,26 +847,26 @@
                     style=
                     "width: 140px; height: 140px;"></a></b></span></p>
 
-                    <!--p style="text-align: center;"><span>Event
+                    <p style="text-align: center;"><span>Event
                     Partners</span></p><br>
 
-                    <p style="text-align: center;">
-                    <span>&nbsp;</span></p>
+                    <!--p style="text-align: center;">
+                    <span>&nbsp;</span></p-->
 
-                    <p style="text-align: center;">
+                    <!--p style="text-align: center;">
                     <span><b><a href="http://www.temenos.com/"
                     target="_blank"><img alt="" src=
                     "http://www.pragyan.org/13/cms/templates/sponsors/img/sponsors/priority%20three/10.jpg"
                     style=
-                    "width: 290px; height: 140px;"></a>&nbsp;</b><b>&nbsp;
+                    "width: 290px; height: 140px;"></a>&nbsp;</b--><b>&nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp;&nbsp;</b><b><a href=
                     "http://www.ultratechcement.com/" target=
                     "_blank"><img alt="" src=
                     "http://www.pragyan.org/13/cms/templates/sponsors/img/sponsors/priority%20two/1.jpg"
                     style=
-                    "width: 140px; height: 140px;"></a>&nbsp;</b><b>&nbsp;
+                    "width: 140px; height: 140px;"></a>&nbsp;</b><!--b>&nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp;&nbsp;</b><b><a href=
@@ -873,9 +874,9 @@
                     "_blank"><img alt="" src=
                     "http://www.pragyan.org/13/cms/templates/sponsors/img/sponsors/priority%20four/2.jpg"
                     style=
-                    "width: 140px; height: 140px;"></a>&nbsp;</b></span></p>
+                    "width: 140px; height: 140px;"></a>&nbsp;</b></span></p-->
 
-                    <p style="text-align: center;"><span><b>&nbsp;
+                    <!--p style="text-align: center;"><span><b>&nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -896,14 +897,14 @@
                     &nbsp;</b><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp;&nbsp;</b><b>&nbsp;<a href=
+                    &nbsp;&nbsp;</b--><b>&nbsp;<a href=
                     "http://levi.in/" target="_blank"><img alt=
                     "Levis" src=
                     "/13/sponsors/Levis--Event-Partner.jpg" style=
                     "width: 140px; height: 140px;"></a></b><b>&nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp;&nbsp;</b></span></p>
+                    &nbsp; &nbsp; &nbsp;&nbsp;</b><!--/span></p>
 
                     <p style="text-align: center;">
                     <span>&nbsp;</span></p>
