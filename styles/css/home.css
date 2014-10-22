@@ -1065,6 +1065,7 @@ a:hover{
   height: auto;
   width: 25%;
   left:0%;
+  top:50%;
   height: auto;
   margin-left: 10px;
 }
@@ -1073,6 +1074,8 @@ a:hover{
   height: auto;
   width:25%;
   right:0;
+  top:50%;
+  margin-right: 10px;
 
 }
 #marketing-openup{

@@ -204,7 +204,7 @@
 		var zindex=[5,3,1,1,3];
 		var clicks=0;
 		var single_click=false;
-		var double_click=false;;
+		var double_click=true;;
 		//scroll bar
 		//$('#content-contacts').jScrollPane();
 
@@ -215,7 +215,7 @@
 		var planet_id = [], from, to;
 
 		function BindPlanets(event,elem){
-			if($('#'+elem.id).hasClass('planets')){
+			if($('#'+elem.id).hasClass('planets') && double_click==false){
 				for(i=0; i<planets.length; i++){
 					planet_id[i] = planets[i].id;
 				}
@@ -257,7 +257,6 @@
 		});
 
 		$('.planets').dblclick(function(){
-			console.log('sdf');
 			double_click=true;
 			return;
 		});
@@ -346,7 +345,7 @@
 			press = true;
 		}
 		
-		/*jQuery.fn.single_double_click = function(single_click_callback, double_click_callback, timeout) {
+		jQuery.fn.single_double_click = function(single_click_callback, double_click_callback, timeout) {
   			return this.each(function(){
     			var clicks = 0, self = this;
     			jQuery(this).click(function(event){
@@ -371,7 +370,7 @@
 		},function(){
 			double_click=true;
 		});
-		*/
+		
 
 		function onkeydown(event){
 			if(!press){
