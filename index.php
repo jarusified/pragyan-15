@@ -1240,7 +1240,7 @@
 		</div>
 	  </div>
       <div id="marketing-info">
-             <div class="content-close">&#120;</div>
+             <div class="marketing-info-close">&#120;</div>
              <div class='left'>
                     <div class="person-name">
                         Prathamesh Amrutkar 
