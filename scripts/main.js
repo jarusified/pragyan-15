@@ -289,18 +289,7 @@
 				$('#marketing-info').fadeIn();
 				$('.planets').css({'opacity':'0.5'});
 				$('.planets').off('click');
-				/*document.addEventListener('keydown',nokeypress,false);
-				function nokeypress(event){
-					if(event.keyCode == 37){
-						return;
-					}
-					else if(event.keyCode==39){
-						return;
-					}
-					else if(event.keyCode==27){
-						closeModal();
-					}
-				}*/
+				document.removeEventListener('keydown',onkeydown,false);
 			});
 
 		}
@@ -350,7 +339,7 @@
 			$('.planets').bind('click',function(event){
 				BindPlanets(event,this);
 			});
-			/*document.removeEventListener('keydown',nokeypress);*/
+			document.addEventListener('keydown',onkeydown,false);
 			for(var i=0;i<planets.length;i++){
 				if($('#'+planets[i].id).hasClass('planet-current-scale')){
 					$('#'+planets[i].id).removeClass('planet-current-scale').addClass('planet-current');
