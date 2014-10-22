@@ -285,10 +285,14 @@
 			$('.content-close').bind('click', function(){
 				closeModal();
 			});
+			$('.marketing-info-close').bind('click',function(){
+				closeMarketingModal();
+			});
 			$('#open-marketing').bind('click',function(event){
 				$('#marketing-info').fadeIn();
 				$('.planets').css({'opacity':'0.5'});
 				$('.planets').off('click');
+				$('#marketing-openup').css({'display':'none'});
 				document.removeEventListener('keydown',onkeydown,false);
 			});
 
@@ -325,6 +329,17 @@
 			press = false;
 		});
 		
+		function closeMarketingModal(){
+			console.log('sdf');
+			$('#marketing-info').css({'display':'none'});
+			$('.planets').css({ 'opacity':'1','cursor':'pointer'});
+			$('#marketing-openup').css({'display':'block'});
+			$('.planets').bind('click',function(event){
+				console.log('fd');
+				BindPlanets(event,this);
+			});
+		}
+
 		function closeModal(){
         	$('.info-field').hide();
         	$('.planet-title').show();
@@ -333,13 +348,7 @@
 			$('.avgrund-cover').css({'display':'none'});
 			$('#content').css({'top':'10%', 'opacity':0});
 			$('#planet-cover').css({'opacity':0});
-			$('#marketing-info').css({'display':'none'});
-			$('.planets').css({ 'opacity':'1','cursor':'pointer'});
-			$('#marketing-openup').css({'display':'block'});
-			$('.planets').bind('click',function(event){
-				BindPlanets(event,this);
-			});
-			document.addEventListener('keydown',onkeydown,false);
+			
 			for(var i=0;i<planets.length;i++){
 				if($('#'+planets[i].id).hasClass('planet-current-scale')){
 					$('#'+planets[i].id).removeClass('planet-current-scale').addClass('planet-current');
@@ -383,7 +392,6 @@
 		*/
 
 		function onkeydown(event){
-
 			if(!press){
 				if(event.keyCode==27){
 					closeModal();

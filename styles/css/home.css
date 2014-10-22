@@ -361,6 +361,35 @@ a:hover{
   -o-transform:scale(0.9);
   transform:scale(1);
 }
+.marketing-info-close{
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  right: 10px;
+  top: 2px;
+  padding: 0;
+  cursor: pointer;
+  z-index: 100;
+
+  -webkit-transform:scale(0.9);
+  -moz-transform:scale(0.9);
+  -ms-transform:scale(0.9);
+  -o-transform:scale(0.9);
+  transform:scale(0.9);
+
+  -webkit-transition:-webkit-transform 0.5s ease-out;
+  -moz-transition:-moz-transform 0.5s ease-out;
+  -o-transition:-o-transform 0.5s ease-out;
+  -ms-transition:-ms-transform 0.5s ease-out;
+  transition:transform 0.5s ease-out;
+}
+.marketing-info-close:hover{
+  -webkit-transform:scale(1);
+  -moz-transform:scale(0.9);
+  -ms-transform:scale(0.9);
+  -o-transform:scale(0.9);
+  transform:scale(1);
+}
 #planet-cover{
   width: 90%;
   height: 30%;
