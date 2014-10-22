@@ -75,7 +75,6 @@
 	  $.transit.useTransitionEnd = true;
 	  $('#capsule').removeClass('planets-zoom-in planets-zoom-out');
 	  $('#capsule').addClass('planets-zoom-out').bind('animationend	animationend webkitAnimationEnd oanimationend MSAnimationEnd', function(){
-	  	console.log(animationEnd);
 	   if(animationEnd === false){
 	   	animationEnd = true;
 	   	for(var i=0;i<planets.length;i++){
@@ -112,6 +111,7 @@
 	}
 
 	function openPage(elem){
+		$('#marketing-openup').css({'display':'none'});
 		if(elem=='contacts'){
 			$('#contacts-info').show();
 		}
@@ -149,7 +149,6 @@
 		}
 		if(elem=='sponsors'){
 			$('#sponsors-info').show();
-			console.log('Increase Size');
 			$('#button-2013').click(function(){
                 $('#sponsors-2014').css('display','none');
                 $('#button-2014').css({'color': '#60D8DF', 'background-color': 'black','border-color':'rgb(94, 94, 94)'});
@@ -209,12 +208,46 @@
 
 		document.addEventListener('keydown',onkeydown,false);
 		document.addEventListener('keyup',onkeyup,false);
-		
+
 
 		var planet_id = [], from, to;
 
+		function BindPlanets(event,elem){
+			console.log(double_click);
+			if($('#'+elem.id).hasClass('planets')){
+				for(i=0; i<planets.length; i++){
+					planet_id[i] = planets[i].id;
+				}
+				to = planet_id.indexOf(elem.id);
+				from = planet_id.indexOf($('.planet-current').attr('id'));
+				
+				if(from!=to)
+					if(positions[from].x-positions[to].x>0){
+						planets=shiftArrayLeft(planets, 1);
+						move(planets,positions,map,scale,zindex,'left');
+					}
+					else{
+						planets=shiftArrayRight(planets, 1);
+						move(planets,positions,map,scale,zindex,'right');		
+					}
+			}
+			if($('#'+elem.id).hasClass('planet-current')){
+				content=true;
+				$('#'+elem.id).removeClass('planet-current').addClass('planet-current-scale');
+				var shifted_orbit={
+					h:50,
+					k:55,
+					a:70,
+					b:0
+				};
+				positions=[];
+				planetFormation(planets,shifted_orbit,positions,scale,zindex);
+				openPage(elem.id);
+			}
+		}
+
 		$('.planets').bind('click', function(event){
-			if($('#'+this.id).hasClass('planets') && double_click==false){
+			if($('#'+this.id).hasClass('planets')){
 				for(i=0; i<planets.length; i++){
 					planet_id[i] = planets[i].id;
 				}
@@ -247,12 +280,27 @@
 		});
 
 
+
 		window.onload = function(){
 			$('.content-close').bind('click', function(){
 				closeModal();
 			});
 			$('#open-marketing').bind('click',function(event){
 				$('#marketing-info').fadeIn();
+				$('.planets').css({'opacity':'0.5'});
+				$('.planets').off('click');
+				/*document.addEventListener('keydown',nokeypress,false);
+				function nokeypress(event){
+					if(event.keyCode == 37){
+						return;
+					}
+					else if(event.keyCode==39){
+						return;
+					}
+					else if(event.keyCode==27){
+						closeModal();
+					}
+				}*/
 			});
 
 		}
@@ -297,6 +345,12 @@
 			$('#content').css({'top':'10%', 'opacity':0});
 			$('#planet-cover').css({'opacity':0});
 			$('#marketing-info').css({'display':'none'});
+			$('.planets').css({ 'opacity':'1','cursor':'pointer'});
+			$('#marketing-openup').css({'display':'block'});
+			$('.planets').bind('click',function(event){
+				BindPlanets(event,this);
+			});
+			/*document.removeEventListener('keydown',nokeypress);*/
 			for(var i=0;i<planets.length;i++){
 				if($('#'+planets[i].id).hasClass('planet-current-scale')){
 					$('#'+planets[i].id).removeClass('planet-current-scale').addClass('planet-current');
@@ -312,7 +366,7 @@
 			press = true;
 		}
 		
-		jQuery.fn.single_double_click = function(single_click_callback, double_click_callback, timeout) {
+		/*jQuery.fn.single_double_click = function(single_click_callback, double_click_callback, timeout) {
   			return this.each(function(){
     			var clicks = 0, self = this;
     			jQuery(this).click(function(event){
@@ -337,7 +391,7 @@
 		},function(){
 			double_click=true;
 		});
-	
+		*/
 
 		function onkeydown(event){
 
