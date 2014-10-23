@@ -708,9 +708,9 @@ a:hover{
 /* Contacts */
 #content-contacts{
   position: absolute;
-  height: 90%;
+  height: 98%;
   width: 80%;
-  top:10%;
+  top:2%;
   left: 50%;
   margin-left: -39%;
   overflow-y:scroll !important;
@@ -723,7 +723,7 @@ a:hover{
   height:auto;
   position: relative;
   padding: 10px;
-  margin: 0 10px 120px 10px;
+  margin: 0 10px 90px 10px;
   float: left;
 }
 
@@ -766,7 +766,7 @@ a:hover{
   font-size: 16px;
   text-align: center;
   position: absolute;
-  top: 105%;
+  top: 100%;
   color: white;
   left: 0;
   width: 100%;

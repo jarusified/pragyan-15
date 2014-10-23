@@ -113,6 +113,7 @@
             <div id='content-pragyan' class='content-divs vertical-scrollable'>
                 <div id='home-content'>
                 <h2 style='color:#60D8DF; text-align: center; font-family: Phantom; text-transform: lowercase'>Pragyan Is Back</h2>
+                <p align='center'> <u>UPDATE :</u> Registrations for <a href='/square-one' target='_blank'>Square One - Chennai Edition</a> has begun! </p>
                 <p>Pragyan, the international techno-managerial festival of NIT Trichy, having completed a major milestone of 10 successful years in the previous edition, continues to grow and expand exponentially in the years to come. Born in 2005 as a platform for students to show off their creativity and technical skills, it has reached extraordinary heights and has attained the ISO 20121:2012 certification for sustainable event management; a certification previously attained by organizations such as the Olympics and the Old Trafford Stadium.</p>
                 <p>The 4 day festival consists of a myriad of events where skills are tested to their limits; workshops which provide a common learning ground for students; guest lectures where eminent speakers continue to inspire; crossfire where heated discussion amongst distinguished leaders is witnessed; Sangam and exhibitions where students can show off their technical knowledge; and infotainment where learning is combined with fun.</p>
                 <p>With every edition, Pragyan has broken barriers and has reached incredible milestones. Original thought and proactive behavior has brought this organization to this prodigious level. Pragyan 2015 will undeniably witness further prominence and the setting of greater trends than ever before.</p>
@@ -154,7 +155,7 @@
                             </div>
 
                             <div class="person-contact">
-                                Deam, Students Welfare
+                                Dean<br/> Students Welfare
                             </div>
                         </div>
                     </div>
@@ -274,6 +275,26 @@
                                 sriram@pragyan.org<br>
                                 <span class="ph-number">+91
                                  94878 94903</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div class='picture'><img src=
+                        "./media/contacts/6.siva.png"></div>
+
+                        <div class="text text-font">
+                            <div class="person-name">
+                                Sivaranjani Nadar 
+                            </div>
+
+                            <div class="person-desig">
+                                 Head, Events
+                            </div>
+
+                            <div class="person-contact">
+                                ranjani@pragyan.org<br>
+                                <span class="ph-number">+91
+                                96268 83116</span>
                             </div>
                         </div>
                     </div>
@@ -455,26 +476,6 @@
                                 prasanna@pragyan.org<br>
                                 <span class="ph-number">+91
                                 99408 69384</span>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="person">
-                        <div class='picture'><img src=
-                        "./media/contacts/6.siva.png"></div>
-
-                        <div class="text text-font">
-                            <div class="person-name">
-                                Sivaranjani Nadar 
-                            </div>
-
-                            <div class="person-desig">
-                                 Head, Events
-                            </div>
-
-                            <div class="person-contact">
-                                ranjani@pragyan.org<br>
-                                <span class="ph-number">+91
-                                96268 83116</span>
                             </div>
                         </div>
                     </div>
@@ -860,8 +861,13 @@
                     style=
                     "width: 290px; height: 140px;"></a>&nbsp;</b--><b>&nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp;&nbsp;</b><b><a href=
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href=
                     "http://www.ultratechcement.com/" target=
                     "_blank"><img alt="" src=
                     "http://www.pragyan.org/13/cms/templates/sponsors/img/sponsors/priority%20two/1.jpg"
