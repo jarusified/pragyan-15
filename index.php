@@ -141,8 +141,8 @@
                         </div>
                     </div>
                     <div class="person">
-                        <div class='picture' id="size-picture"><img src=
-                        "./media/contacts/convenor.png"></div>
+                        <div class='picture'><img src=
+                        "./media/contacts/venkatesh.png"></div>
 
                         <div class="text text-font">
                             <div class="person-name">
@@ -1241,17 +1241,17 @@
 	  </div>
       <div id="marketing-info">
              <div class="marketing-info-close">&#120;</div>
-             <div class='left'>
-                    <div class="person-name">
-                        Prathamesh Amrutkar 
+                <div class='left'>
+                   <div class="person-name">
+                        Sriram Sridharan
                     </div>
                     <div class="person-desig">
-                        Head, Sponsorships
+                        Head, Industrial Collaborations
                     </div>
                     <div class="person-contact">
-                        prathamesh@pragyan.org<br>
+                        sriram@pragyan.org<br>
                         <span class="ph-number">+91
-                        72009 38751</span>
+                         94878 94903</span>
                     </div>
                 </div>
                 <div class="right">

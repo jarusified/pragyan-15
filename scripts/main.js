@@ -12,7 +12,7 @@
  	"contacts/aplhonse.png","contacts/director.png","contacts/1.ajay.png", "contacts/2.gm.png", "contacts/3.sarath.png", "contacts/4.prathamesh.png", 
  	"contacts/5.sriram.png", "contacts/6.siva.png", "contacts/7.naren.png", "contacts/8.kram.png", "contacts/9.ruban.png",
  	"contacts/neethi.png", "contacts/11.dhuwaara.png", "contacts/12.yaazhini.png",  "contacts/13.julian.png",
- 	"contacts/14.prasanna.png",  "contacts/15.vishnu.png",  "contacts/16.aravind.png","contacts/convenor.png"];
+ 	"contacts/14.prasanna.png",  "contacts/15.vishnu.png",  "contacts/16.aravind.png","contacts/venkatesh.png"];
 
 	for(var i=0; i<images.length ; i++) {
        	var pxImage = new PxLoaderImage(baseUrl+images[i]); 
@@ -203,8 +203,7 @@
 		var scale=[0.8,0.4,0.2,0.2,0.4];
 		var zindex=[5,3,1,1,3];
 		var clicks=0;
-		var single_click=false;
-		var double_click=true;;
+		var double_click=false;
 		//scroll bar
 		//$('#content-contacts').jScrollPane();
 
@@ -215,7 +214,9 @@
 		var planet_id = [], from, to;
 
 		function BindPlanets(event,elem){
+			console.log(double_click);
 			if($('#'+elem.id).hasClass('planets') && double_click==false){
+				console.log('sd');
 				for(i=0; i<planets.length; i++){
 					planet_id[i] = planets[i].id;
 				}
@@ -246,14 +247,8 @@
 				openPage(elem.id);
 			}
 		}
-		var clicks=0;
 		$('.planets').bind('click',function(event){
-			clicks++;
-			console.log(clicks);
-			if(clicks==1){
 				BindPlanets(event,this);
-				clicks=0;
-			}
 		});
 
 		$('.planets').dblclick(function(){
@@ -264,6 +259,9 @@
 
 
 		window.onload = function(){
+			$('.planets').bind('click',function(){
+				BindPlanets(this,event);
+			});
 			$('.content-close').bind('click', function(){
 				closeModal();
 			});
@@ -282,7 +280,6 @@
 
 		// starts preloader
 		loader.start();  
-		
 		
 		planetFormation(planets,orbit,positions,scale,zindex);
 		for(var i=0;i<planets.length;i++){
