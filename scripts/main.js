@@ -214,9 +214,9 @@
 		var planet_id = [], from, to;
 
 		function BindPlanets(event,elem){
-			console.log(double_click);
+			//console.log(double_click);
 			if($('#'+elem.id).hasClass('planets') && double_click==false){
-				console.log('sd');
+				//console.log('sd');
 				for(i=0; i<planets.length; i++){
 					planet_id[i] = planets[i].id;
 				}
