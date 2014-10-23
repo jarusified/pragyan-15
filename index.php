@@ -859,58 +859,17 @@
                     target="_blank"><img alt="" src=
                     "http://www.pragyan.org/13/cms/templates/sponsors/img/sponsors/priority%20three/10.jpg"
                     style=
-                    "width: 290px; height: 140px;"></a>&nbsp;</b--><b>&nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href=
+                    "width: 290px; height: 140px;"></a>&nbsp;</b--><p style='float: left;text-align: center;width: 100%;'><a href=
                     "http://www.ultratechcement.com/" target=
                     "_blank"><img alt="" src=
                     "http://www.pragyan.org/13/cms/templates/sponsors/img/sponsors/priority%20two/1.jpg"
                     style=
-                    "width: 140px; height: 140px;"></a>&nbsp;</b><!--b>&nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp;&nbsp;</b><b><a href=
-                    "http://www.ceebros.com/" target=
-                    "_blank"><img alt="" src=
-                    "http://www.pragyan.org/13/cms/templates/sponsors/img/sponsors/priority%20four/2.jpg"
-                    style=
-                    "width: 140px; height: 140px;"></a>&nbsp;</b></span></p-->
-
-                    <!--p style="text-align: center;"><span><b>&nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp;&nbsp;<a href=
-                    "http://www.interviewstreet.com/" target=
-                    "_blank"><img alt="Event Partner" src=
-                    "http://www.pragyan.org/13/cms/templates/sponsors/img/sponsors/priority%20four/4.jpg"
-                    style="width: 140px; height: 140px;"></a>&nbsp;
-                    &nbsp;&nbsp;</b><b>&nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp;</b><b><a href=
-                    "https://www.hackerrank.com/" target=
-                    "_blank"><img alt="Hackerrank" src=
-                    "/13/sponsors/Hackerrank--Event-Partner.jpg"
-                    style="width: 140px; height: 140px;"></a>&nbsp;
-                    &nbsp;</b><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp;&nbsp;</b--><b>&nbsp;<a href=
+                    "width: 140px; height: 140px;"></a>&nbsp; &nbsp; &nbsp;<a href=
                     "http://levi.in/" target="_blank"><img alt=
                     "Levis" src=
                     "/13/sponsors/Levis--Event-Partner.jpg" style=
-                    "width: 140px; height: 140px;"></a></b><b>&nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp;&nbsp;</b><!--/span></p>
+                    "width: 140px; height: 140px;"></a>
+                    </p><!--/span></p>
 
                     <p style="text-align: center;">
                     <span>&nbsp;</span></p>
